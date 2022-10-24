@@ -1,11 +1,12 @@
 import { FunctionComponent } from 'react';
+import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
-import './App.module.scss';
 
 const App: FunctionComponent = () => {
     return (
-        <div className="background">
+        <div className="page__container">
             <Header />
+            <Footer />
         </div>
     );
 };

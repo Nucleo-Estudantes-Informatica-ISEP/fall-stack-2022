@@ -6,8 +6,7 @@ interface HeaderProps {}
 const Header: FunctionComponent<HeaderProps> = () => {
     return (
         <div
-            id="header"
-            className="container-fluid vh-100 d-flex align-items-center
+            className="header__container container-fluid vh-100 d-flex align-items-center
         justify-content-center">
             <div id="header-info" className="text-center">
                 <div className="header-text">

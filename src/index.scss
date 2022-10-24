@@ -1,1 +1,11 @@
-@import "reset";
+@import 'reset';
+
+.page__container {
+    aspect-ratio: 1080/1080;
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    background-image: url('../src/assets/images/background.png');
+    background-attachment: fixed;
+    min-height: 100vh;
+}
