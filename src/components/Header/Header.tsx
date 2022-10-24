@@ -1,29 +1,26 @@
 import { FunctionComponent } from 'react';
+import utilStyles from '../../utils.module.scss';
 import './Header.module.scss';
 
 interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
     return (
-        <div
-            className="header__container container-fluid vh-100 d-flex align-items-center
-        justify-content-center">
+        <div className="header__container">
             <div id="header-info" className="text-center">
-                <div className="header-text">
-                    <img
-                        id="header-logo"
-                        className="img-fluid"
-                        src="assets/img/logo.png"
-                        alt="Fall Stack (2021)"
-                    />
-                    <h5 className="text-light my-4">13 e 14 de janeiro</h5>
-                    <h1 className="text-light my-4">Fallstack 21/22</h1>
-                    <h5 id="header-text" className="text-light mt-4">
-                        <div>The time has come for</div>
-                        <span id="header-animated-text"></span>
-                        <span id="header-text-cursor">|</span>
-                    </h5>
-                </div>
+                <img
+                    id="header-logo"
+                    className={utilStyles.img__fluid}
+                    src="assets/img/logo.png"
+                    alt="Logo principal do evento Fall-Stack 2022"
+                />
+                <h5 className="text-light my-4">13 e 14 de janeiro</h5>
+                <h1 className="text-light my-4">Fallstack 21/22</h1>
+                <h5 id="header-text" className="text-light mt-4">
+                    <div>The time has come for</div>
+                    <span id="header-animated-text"></span>
+                    <span id="header-text-cursor">|</span>
+                </h5>
 
                 <a
                     id="enrollment-text"

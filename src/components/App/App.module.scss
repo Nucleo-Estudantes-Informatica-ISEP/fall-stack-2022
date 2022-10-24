@@ -1,0 +1,14 @@
+.page {
+    &__background {
+        aspect-ratio: 1080/1080;
+        background-position: center !important;
+        background-size: cover !important;
+        background-image: url('../../src/assets/images/background.png');
+        background-attachment: fixed;
+        min-height: 100vh;
+    }
+    &__container {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
