@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 
 const App: FunctionComponent = () => {
     return (
-        <div className="page__container">
+        <div className="aspect-square min-h-screen w-full bg-page-background bg-cover bg-fixed bg-center">
             <Header />
             <Footer />
         </div>

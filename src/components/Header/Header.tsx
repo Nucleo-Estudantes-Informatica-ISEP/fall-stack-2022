@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import './Header.module.scss';
+import './Header.css';
 
 interface HeaderProps {}
 
@@ -27,7 +27,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
 
                 <a
                     id="enrollment-text"
-                    className="text-light underline my-5"
+                    className="text-light my-5 underline"
                     target="_blank"
                     href="https://docs.google.com/forms/d/e/1FAIpQLSeD1gx7vhavvW09w0Ciw2dXQ1H9dy6EoP6telW4hAsI5WihKg/viewform?usp=sf_link"
                     rel="noreferrer">
@@ -37,7 +37,7 @@ const Header: FunctionComponent<HeaderProps> = () => {
                 </a>
             </div>
 
-            <div id="scroll-div" className="text-center my-4">
+            <div id="scroll-div" className="my-4 text-center">
                 {/* TODO CHECK TAB INDEX */}
                 <a id="scroll-href" href="#content">
                     <i className="bi bi-chevron-down fs-2"></i>
