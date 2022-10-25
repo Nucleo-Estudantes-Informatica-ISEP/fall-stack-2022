@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import { ChevronDown } from 'react-bootstrap-icons';
-import './Header.scss';
+import './Header.css';
 
 interface HeaderProps {}
 
