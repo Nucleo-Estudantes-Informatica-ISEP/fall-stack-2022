@@ -6,10 +6,10 @@ interface HeaderProps {}
 
 const Header: FunctionComponent<HeaderProps> = () => {
     return (
-        <div className="header__container">
-            <div className="header__info">
+        <div className="flex h-screen w-full flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center text-center">
                 <img
-                    className="header__logo"
+                    className="max-w-full "
                     src="../../../src/assets/images/logo.png"
                     alt="Logo principal do evento Fall-Stack 2022"
                 />
