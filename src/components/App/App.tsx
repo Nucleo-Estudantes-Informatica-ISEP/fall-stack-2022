@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import Header from '../Header';
 
 const App: FunctionComponent = () => {
     return (
