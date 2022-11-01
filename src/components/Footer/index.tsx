@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import './style.scss';
+import './style.css';
 interface FooterProps {}
 
 const Footer: FunctionComponent<FooterProps> = () => {
