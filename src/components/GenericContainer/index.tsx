@@ -7,9 +7,9 @@ interface GenericContainerProps {
 
 const GenericContainer: FunctionComponent<GenericContainerProps> = ({
     children,
-    width = 'w-11/12'
+    width = 'w-3/4'
 }) => {
-    return <div className={`${width} my-0 mx-auto`}>{children}</div>;
+    return <div className={`lg:${width} my-0 mx-auto w-full`}>{children}</div>;
 };
 
 export default GenericContainer;
