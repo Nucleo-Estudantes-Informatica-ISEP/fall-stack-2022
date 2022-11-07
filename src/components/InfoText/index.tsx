@@ -10,22 +10,22 @@ interface Props {
 const InfoText: React.FC<Props> = ({ days, month, beggingTime, endTime }) => {
     return (
         <>
-            <h1 className="text-center mt-5 mb-4">O que é o Fallstack?</h1>
+            <h1 className="text-center text-4xl mt-5 mb-4">O que é o Fallstack?</h1>
             <div id="intro-info" className="my-4">
                 <span id="calendar-span">
-                    <i className="bi bi-calendar-event my-2"></i>{' '}
+                    {/* Missing Icon */}
                     <b>
                         {days.join(' e ')} de {month}
                     </b>
                 </span>
                 <span id="alarm-span">
-                    <i className="bi bi-alarm my-2"></i>{' '}
+                    {/* Missing Icon */}
                     <b>
                         {beggingTime} - {endTime}
                     </b>
                 </span>
                 <span id="location-span">
-                    <i className="bi bi-geo-alt my-2"></i>{' '}
+                    {/* Missing Icon */}
                     <b>Instituto Superior de Engenharia do Porto</b>
                 </span>
             </div>

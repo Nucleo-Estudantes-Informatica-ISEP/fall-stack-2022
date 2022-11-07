@@ -7,7 +7,7 @@ import InfoText from '../InfoText';
 
 const Content: FunctionComponent = () => {
     return (
-        <div id="content" className="container-fluid bg-light bg-gradient p-5">
+        <div className="container bg-slate-100 center w-3/4 mx-auto rounded-lg p-14">
             <InfoText days={[15, 16]} month="Dezembro" beggingTime="15:00h" endTime="20:00h" />
 
             <div id="content-activity-main-container">

@@ -5,7 +5,7 @@ import Header from '../Header/Header';
 
 const App: FunctionComponent = () => {
     return (
-        <div className="aspect-square min-h-screen w-full bg-page-background bg-cover bg-fixed bg-center">
+        <div className="aspect-square min-h-screen w-full bg-page-background bg-cover">
             <Header />
             <Content />
             <Footer />
