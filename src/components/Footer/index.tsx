@@ -2,16 +2,19 @@ import { FunctionComponent } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter } from 'react-bootstrap-icons';
 import './style.css';
 
-interface FooterProps {}
+interface FooterProps {
+    lastEditionUrl: string;
+}
 
-const Footer: FunctionComponent<FooterProps> = () => {
+const Footer: FunctionComponent<FooterProps> = ({ lastEditionUrl }) => {
     const currentYear = new Date().getFullYear();
+    const NEI_WEBSITE_URL = 'https://nei-isep.org';
 
     return (
         <footer className="w-full text-center">
             <div className="flex justify-center drop-shadow-lg hover:drop-shadow-xl lg:m-8">
                 <div className="my-6 w-max  transition-all duration-500 hover:scale-105">
-                    <a href="https://fallstack2020.nei-isep.org" target="_blank" rel="noreferrer">
+                    <a href={lastEditionUrl} target="_blank" rel="noreferrer">
                         <div className="rounded-3xl border-[5px] border-double border-white p-5 font-good__times text-2xl text-white drop-shadow-3xl transition-all duration-300 lg:text-[2.5rem]">
                             Edição Anterior
                         </div>
@@ -21,7 +24,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
 
             <div className="flex items-center justify-center lg:m-8">
                 <div className="w-max py-4 transition-all duration-500 hover:scale-105">
-                    <a href="https://www.nei-isep.org/" target="_blank" rel="noreferrer">
+                    <a href={NEI_WEBSITE_URL} target="_blank" rel="noreferrer">
                         <img
                             className="mx-auto block h-auto max-w-full drop-shadow-3xl transition-all duration-300 hover:drop-shadow-4xl"
                             src="../../../src/assets/images/logo-white.png"
