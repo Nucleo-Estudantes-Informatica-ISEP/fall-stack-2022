@@ -1,3 +1,12 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import './reset.css';
+
+@layer base {
+    @font-face {
+        font-family: 'Good Times';
+        src: url('../src/assets/fonts/good-times.ttf') format('truetype');
+    }
+}
