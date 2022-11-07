@@ -9,6 +9,9 @@ module.exports = {
             animation: {
                 fade: 'fade ease-out 1s 1.5s forwards'
             },
+            aspectRatio: {
+                '1080/1080': '1080 / 1080'
+            },
             keyframes: {
                 fade: {
                     from: { opacity: 0 },
@@ -19,7 +22,8 @@ module.exports = {
                 good__times: ['Good Times', 'Arial', 'sans-serif']
             },
             dropShadow: {
-                '3xl': '2px 2px 0.5px rgba(0, 0, 0, 0.33)'
+                '3xl': '2px 2px 0.5px rgba(0, 0, 0, 0.33)',
+                '4xl': '2px 3px 4px rgba(0, 0, 0, 0.33)'
             }
         }
     },
