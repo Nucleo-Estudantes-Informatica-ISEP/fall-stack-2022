@@ -13,6 +13,20 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
         return () => window.removeEventListener('keydown', onKeyPress);
     }, [hidden, setHidden]);
 
+    const [activeTabIndex, setActiveTabIndex] = React.useState(0);
+
+    const tabs: React.ReactNode[] = [
+        <p key={0} className="mb-4 text-lg leading-relaxed text-slate-500">
+            {bodyText}
+        </p>,
+        <p key={1} className="mb-4 text-lg leading-relaxed text-slate-500">
+            Tab 2
+        </p>,
+        <p key={2} className="mb-4 text-lg leading-relaxed text-slate-500">
+            Tab 3
+        </p>
+    ];
+
     return (
         <div
             className={`
@@ -20,7 +34,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
             inset-0 animate-fade-imm bg-gray-700/60
             transition-opacity`}>
             <div className="z-1 fixed inset-0 flex items-center justify-center overflow-y-auto overflow-x-hidden shadow-lg outline-none focus:outline-none">
-                <div className="relative my-6 mx-auto w-auto max-w-3xl">
+                <div className="relative mx-auto h-1/2 w-4/5 max-w-3xl">
                     <div className="relative flex w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
                         <div className="flex items-start justify-between rounded-t border-b border-solid border-slate-200 p-5">
                             <h3 className="w-full text-center text-3xl font-semibold capitalize">
@@ -34,22 +48,24 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
                         </div>
 
                         <div className="mx-auto flex w-3/4 flex-row items-center justify-around pt-4">
-                            <li className="b-y-black b-solid cursor-pointer list-none text-lg">
+                            <li
+                                className="cursor-pointer list-none text-lg"
+                                onClick={() => setActiveTabIndex(0)}>
                                 Tab
                             </li>
-                            <li className="b-y-black b-solid cursor-pointer list-none text-lg">
+                            <li
+                                className="cursor-pointer list-none text-lg"
+                                onClick={() => setActiveTabIndex(1)}>
                                 Tab
                             </li>
-                            <li className="b-y-black b-solid cursor-pointer list-none text-lg">
+                            <li
+                                className="cursor-pointer list-none text-lg"
+                                onClick={() => setActiveTabIndex(2)}>
                                 Tab
                             </li>
                         </div>
 
-                        <div className="relative flex-auto py-6 px-12">
-                            <p className="mb-4 text-lg leading-relaxed text-slate-500">
-                                {bodyText}
-                            </p>
-                        </div>
+                        <div className="relative flex-auto py-6 px-12">{tabs[activeTabIndex]}</div>
                     </div>
                 </div>
             </div>
