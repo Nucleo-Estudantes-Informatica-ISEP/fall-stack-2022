@@ -1,9 +1,9 @@
 import { FunctionComponent } from 'react';
 
-import './styles.css';
-
 import critical from '../../assets/images/companies/critical.png';
+import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
+import Map from '../Map';
 import Schedule from '../Schedule';
 
 const Content: FunctionComponent = () => {
@@ -92,7 +92,7 @@ const Content: FunctionComponent = () => {
 
             <hr />
 
-            <h1 className="title my-5 text-center">Empresas</h1>
+            <HeadingText>Empresas</HeadingText>
             <div className="container-fluid">
                 <div id="stands-diamond" className="mb-5">
                     <h2 id="stands-diamond-text" className="text-center ">
@@ -411,17 +411,7 @@ const Content: FunctionComponent = () => {
                 ]}
             />
 
-            <div>
-                <h1 className="my-5 text-center">Mapa</h1>
-                <img
-                    className="img-fluid d-block map my-2 mx-auto"
-                    src={'./assets/img/map.png'}
-                    alt="Mapa Informativo dos locais das Atividades"
-                    width="850px"
-                    height="850px"
-                    draggable="false"
-                />
-            </div>
+            <Map />
         </div>
     );
 };
