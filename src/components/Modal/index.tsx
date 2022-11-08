@@ -47,7 +47,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
                             </button>
                         </div>
 
-                        <div className="mx-auto flex w-3/4 flex-row items-center justify-around">
+                        <div className="mx-auto flex w-full flex-col items-center justify-around md:w-3/4 md:flex-row">
                             <li
                                 className="h-full w-full cursor-pointer list-none py-2 text-center text-lg hover:bg-gray-200"
                                 onClick={() => setActiveTabIndex(0)}>
