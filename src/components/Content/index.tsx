@@ -7,7 +7,7 @@ import InfoText from '../InfoText';
 
 const Content: FunctionComponent = () => {
     return (
-        <div className="container bg-slate-100 center w-3/4 mx-auto rounded-lg p-14">
+        <div className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
             <InfoText days={[15, 16]} month="Dezembro" beggingTime="15:00h" endTime="20:00h" />
 
             <div id="content-activity-main-container">
@@ -68,7 +68,7 @@ const Content: FunctionComponent = () => {
                 id="content-enrollment-container"
                 className="d-flex flex-column align-items-center justify-content-center
           text-center">
-                <h1 className="text-center my-5">Inscrições</h1>
+                <h1 className="my-5 text-center">Inscrições</h1>
 
                 <a
                     id="content-enrollment-text"
@@ -91,7 +91,7 @@ const Content: FunctionComponent = () => {
 
             <hr />
 
-            <h1 className="text-center my-5 title">Empresas</h1>
+            <h1 className="title my-5 text-center">Empresas</h1>
             <div className="container-fluid">
                 <div id="stands-diamond" className="mb-5">
                     <h2 id="stands-diamond-text" className="text-center ">
@@ -102,8 +102,8 @@ const Content: FunctionComponent = () => {
 
                 <div className="row mb-xl-2 justify-content-center">
                     <div
-                        className="col-lg col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-start stand stand"
+                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-start
+                    stand stand my-2"
                         data-toggle="modal"
                         data-target="#minderaModal">
                         <img
@@ -116,8 +116,8 @@ const Content: FunctionComponent = () => {
                     </div>
 
                     <div
-                        className="col-lg col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand"
+                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2"
                         data-toggle="modal"
                         data-target="#primaveraModal">
                         <img
@@ -130,8 +130,8 @@ const Content: FunctionComponent = () => {
                     </div>
 
                     <div
-                        className="col-lg col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand"
+                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2"
                         data-toggle="modal"
                         data-target="#devScopeModal">
                         <img
@@ -144,8 +144,8 @@ const Content: FunctionComponent = () => {
                     </div>
 
                     <div
-                        className="col-lg col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand"
+                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2"
                         data-toggle="modal"
                         data-target="#armisModal">
                         <img
@@ -158,8 +158,8 @@ const Content: FunctionComponent = () => {
                     </div>
 
                     <div
-                        className="col-lg col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand"
+                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2"
                         data-toggle="modal"
                         data-target="#continentalModal">
                         <img
@@ -173,7 +173,7 @@ const Content: FunctionComponent = () => {
                 </div>
 
                 <div id="stands-gold" className="mb-5">
-                    <h3 id="stands-gold-text" className="text-center mt-2">
+                    <h3 id="stands-gold-text" className="mt-2 text-center">
                         Gold
                     </h3>
                     <div></div>
@@ -181,8 +181,8 @@ const Content: FunctionComponent = () => {
 
                 <div className="row mb-xl-2 justify-content-center">
                     <div
-                        className="col-lg col-sm-4 col-xs-12 my-2  d-flex align-items-center
-                    justify-content-center stand"
+                        className="col-lg col-sm-4 col-xs-12 d-flex  align-items-center justify-content-center
+                    stand my-2"
                         data-toggle="modal"
                         data-target="#accentureModal">
                         <img
@@ -194,8 +194,8 @@ const Content: FunctionComponent = () => {
                         />
                     </div>
                     <div
-                        className="col-lg col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand"
+                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2"
                         data-toggle="modal"
                         data-target="#jscramblerModal">
                         <img
@@ -209,7 +209,7 @@ const Content: FunctionComponent = () => {
                 </div>
 
                 <div id="stands-silver" className="mb-5">
-                    <h5 id="stands-silver-text" className="text-center mt-5">
+                    <h5 id="stands-silver-text" className="mt-5 text-center">
                         Silver
                     </h5>
                     <div></div>
@@ -217,8 +217,8 @@ const Content: FunctionComponent = () => {
 
                 <div className="row mb-xl-2 justify-content-center">
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2">
                         <a
                             href="https://www.criticalmanufacturing.com"
                             target="_blank"
@@ -233,8 +233,8 @@ const Content: FunctionComponent = () => {
                         </a>
                     </div>
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2">
                         <a
                             href="https://www.craftablesoftware.com/"
                             target="_blank"
@@ -249,8 +249,8 @@ const Content: FunctionComponent = () => {
                         </a>
                     </div>
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2">
                         <a href="https://www.byside.com/" target="_blank" rel="noreferrer">
                             <img
                                 className="img-fluid my-3 mx-auto"
@@ -262,8 +262,8 @@ const Content: FunctionComponent = () => {
                         </a>
                     </div>
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2">
                         <a
                             href="https://www.glintt.com/pt/Paginas/home.aspx"
                             target="_blank"
@@ -278,9 +278,9 @@ const Content: FunctionComponent = () => {
                         </a>
                     </div>
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex
-                    align-items-center
-                    justify-content-center stand stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center
+                    justify-content-center
+                    stand stand my-2">
                         <a href="https://www.farfetch.com/pt/" target="_blank" rel="noreferrer">
                             <img
                                 className="img-fluid my-3 mx-auto"
@@ -292,8 +292,8 @@ const Content: FunctionComponent = () => {
                         </a>
                     </div>
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2">
                         <a href="https://www.hitachi.eu/pt-pt" target="_blank" rel="noreferrer">
                             <img
                                 className="img-fluid my-3 mx-auto"
@@ -304,8 +304,8 @@ const Content: FunctionComponent = () => {
                         </a>
                     </div>
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2">
                         <a
                             href="http://www.konkconsulting.com/PT/"
                             target="_blank"
@@ -321,8 +321,8 @@ const Content: FunctionComponent = () => {
                     </div>
 
                     <div
-                        className="col-lg-3 col-sm-4 col-xs-12 my-2 d-flex align-items-center
-                    justify-content-center stand">
+                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
+                    stand my-2">
                         <a
                             href="https://www.natixis.com/natixis/en/home-j_6.html"
                             target="_blank"
@@ -339,7 +339,7 @@ const Content: FunctionComponent = () => {
                 </div>
             </div>
 
-            <h1 id="sponsors-title" className="text-center my-5 retro">
+            <h1 id="sponsors-title" className="retro my-5 text-center">
                 Patrocinadores
             </h1>
             <div className="container-fluid">
@@ -350,7 +350,7 @@ const Content: FunctionComponent = () => {
                         className="sponsor-container my-2"
                         rel="noreferrer">
                         <img
-                            className="img-fluid my-4 mx-auto d-block sponsor"
+                            className="img-fluid d-block sponsor my-4 mx-auto"
                             src={'./assets/img/sponsors/ae.png'}
                             alt="AE ISEP Logo"
                         />
@@ -361,7 +361,7 @@ const Content: FunctionComponent = () => {
                         className="sponsor-container my-2"
                         rel="noreferrer">
                         <img
-                            className="img-fluid my-4 mx-auto d-block sponsor"
+                            className="img-fluid d-block sponsor my-4 mx-auto"
                             src={'./assets/img/sponsors/dominos.png'}
                             alt="Domino's Pizza Logo"
                         />
@@ -372,7 +372,7 @@ const Content: FunctionComponent = () => {
                         className="sponsor-container my-2"
                         rel="noreferrer">
                         <img
-                            className="img-fluid my-4 mx-auto d-block sponsor"
+                            className="img-fluid d-block sponsor my-4 mx-auto"
                             src={'./assets/img/sponsors/moura.png'}
                             alt="Conf. e Past. Moura Logo"
                         />
@@ -381,7 +381,7 @@ const Content: FunctionComponent = () => {
             </div>
 
             <hr />
-            <h1 className="text-center my-5">Horário</h1>
+            <h1 className="my-5 text-center">Horário</h1>
 
             <ul className="nav nav-pills center-pills" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
@@ -510,9 +510,9 @@ const Content: FunctionComponent = () => {
             </div>
 
             <div>
-                <h1 className="text-center my-5">Mapa</h1>
+                <h1 className="my-5 text-center">Mapa</h1>
                 <img
-                    className="img-fluid my-2 mx-auto d-block map"
+                    className="img-fluid d-block map my-2 mx-auto"
                     src={'./assets/img/map.png'}
                     alt="Mapa Informativo dos locais das Atividades"
                     width="850px"
