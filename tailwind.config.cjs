@@ -19,7 +19,8 @@ module.exports = {
                 }
             },
             fontFamily: {
-                good__times: ['Good Times', 'Arial', 'sans-serif']
+                good__times: ['Good Times', 'Arial', 'sans-serif'],
+                sans: ['Roboto', 'Arial', 'sans-serif']
             },
             dropShadow: {
                 '3xl': '2px 2px 0.5px rgba(0, 0, 0, 0.33)',

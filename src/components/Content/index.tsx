@@ -4,6 +4,7 @@ import './styles.css';
 
 import critical from '../../assets/images/companies/critical.png';
 import InfoText from '../InfoText';
+import Schedule from '../Schedule';
 
 const Content: FunctionComponent = () => {
     return (
@@ -380,134 +381,35 @@ const Content: FunctionComponent = () => {
                 </div>
             </div>
 
-            <hr />
-            <h1 className="my-5 text-center">Horário</h1>
-
-            <ul className="nav nav-pills center-pills" id="myTab" role="tablist">
-                <li className="nav-item" role="presentation">
-                    <button
-                        className="nav-link active"
-                        id="quinta-tab"
-                        data-toggle="tab"
-                        data-target="#quinta"
-                        type="button"
-                        role="tab"
-                        aria-controls="quinta"
-                        aria-selected="true">
-                        Quinta-feira - Auditório Magno
-                    </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                    <button
-                        className="nav-link"
-                        id="sexta-tab"
-                        data-toggle="tab"
-                        data-target="#sexta"
-                        type="button"
-                        role="tab"
-                        aria-controls="sexta"
-                        aria-selected="false">
-                        Sexta-feira - Sala de Eventos
-                    </button>
-                </li>
-            </ul>
-            <div className="tab-content" id="myTabContent">
-                <div
-                    className="tab-pane fade show active"
-                    id="quinta"
-                    role="tabpanel"
-                    aria-labelledby="quinta-tab">
-                    <table className="schedule-table">
-                        <tr>
-                            <th>Hora</th>
-                            <th>Atividade</th>
-                        </tr>
-
-                        <tr>
-                            <td>09.00h - 10.40h</td>
-                            <td>Sessão de entrevistas a empresas participantes</td>
-                        </tr>
-
-                        <tr>
-                            <td>10.40h - 11.00h</td>
-                            <td>Coffee Break</td>
-                        </tr>
-
-                        <tr>
-                            <td>11.00h - 13.00h</td>
-                            <td>Sessão de entrevistas a empresas participantes</td>
-                        </tr>
-
-                        <tr>
-                            <td>13.00h - 14.30h</td>
-                            <td>Pausa para almoço</td>
-                        </tr>
-
-                        <tr>
-                            <td>14.30h - 15.50h</td>
-                            <td>Sessão de entrevistas a empresas participantes</td>
-                        </tr>
-
-                        <tr>
-                            <td>15.50h - 16.10h</td>
-                            <td>Coffee Break</td>
-                        </tr>
-
-                        <tr>
-                            <td>16.10h - 17.30h</td>
-                            <td>Sessão de entrevistas a empresas participantes</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div
-                    className="tab-pane fade"
-                    id="sexta"
-                    role="tabpanel"
-                    aria-labelledby="sexta-tab">
-                    <table className="schedule-table">
-                        <tr>
-                            <th>Hora</th>
-                            <th>Atividade</th>
-                        </tr>
-
-                        <tr>
-                            <td>09.30h - 11.00h</td>
-                            <td>Sessão de Round Tables e Networking</td>
-                        </tr>
-
-                        <tr>
-                            <td>11.00h - 11.30h</td>
-                            <td>Coffee Break</td>
-                        </tr>
-
-                        <tr>
-                            <td>11.30h - 13.00h</td>
-                            <td>Sessão de Round Tables e Networking</td>
-                        </tr>
-
-                        <tr>
-                            <td>13.00h - 14.00h</td>
-                            <td>Pausa para almoço</td>
-                        </tr>
-
-                        <tr>
-                            <td>14.00h - 15.30h</td>
-                            <td>Sessão de Round Tables e Networking</td>
-                        </tr>
-
-                        <tr>
-                            <td>15.30h - 16.00h</td>
-                            <td>Coffee Break</td>
-                        </tr>
-
-                        <tr>
-                            <td>16.00h - 17.30h</td>
-                            <td>Sessão de Round Tables e Networking</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+            <Schedule
+                firstDayTitle="Quinta-Feira - Auditório Magno"
+                secondDayTitle="Sexta-feira - Sala de Eventos"
+                scheduleEvents={[
+                    [
+                        {
+                            hour: '09.00h - 10.40h',
+                            activity: '	Sessão de entrevistas a empresas participantes'
+                        },
+                        { hour: '10.40h - 11.00h', activity: 'Coffee Break' },
+                        { hour: '11.00h - 11.30h', activity: 'Coffee Break' },
+                        { hour: '11.30h - 12.00h', activity: 'Coffee Break' },
+                        { hour: '12.00h - 12.30h', activity: 'Coffee Break' },
+                        { hour: '12.30h - 13.30h', activity: 'Coffee Break' },
+                        { hour: '13.30h - 14.00h', activity: 'Coffee Break' }
+                    ],
+                    [
+                        {
+                            hour: '09.30h - 11.00h',
+                            activity: 'Sessão de Round Tables e Networking'
+                        },
+                        { hour: '11.00h - 11.30h', activity: 'Coffee Break' },
+                        { hour: '11.30h - 12.00h', activity: 'Coffee Break' },
+                        { hour: '12.00h - 12.30h', activity: 'Coffee Break' },
+                        { hour: '12.30h - 13.30h', activity: 'Coffee Break' },
+                        { hour: '13.30h - 14.00h', activity: 'Coffee Break' }
+                    ]
+                ]}
+            />
 
             <div>
                 <h1 className="my-5 text-center">Mapa</h1>
