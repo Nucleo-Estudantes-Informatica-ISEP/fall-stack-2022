@@ -7,7 +7,8 @@ interface HeroContainerProps {
 
 const HeroContainer: FunctionComponent<HeroContainerProps> = ({ children }) => {
     return (
-        <section className={`aspect-auto min-h-screen w-full bg-page-background bg-cover `}>
+        <section
+            className={`aspect-auto min-h-screen w-full bg-page-background bg-cover font-sans`}>
             {children}
         </section>
     );
