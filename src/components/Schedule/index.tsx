@@ -23,7 +23,7 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
                     className={`
                     ${activeScheduleEventIndex == 0 ? 'bg-orange-400' : 'bg-gray-200'}
                     ${activeScheduleEventIndex == 0 ? 'text-white' : 'text-black'}
-                    w-full rounded-t-lg py-2 hover:brightness-95 lg:rounded-l-lg lg:rounded-r-none`}
+                    w-full rounded-t-lg py-2.5 hover:brightness-95 lg:rounded-l-lg lg:rounded-r-none`}
                     onClick={() => setActiveScheduleEventIndex(0)}>
                     {firstDayTitle}
                 </button>
@@ -32,7 +32,7 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
                     ${activeScheduleEventIndex == 1 ? 'bg-orange-400' : 'bg-gray-200'} 
                     ${activeScheduleEventIndex == 1 ? 'text-white' : 'text-black'}
                     w-full
-                    rounded-b-lg px-1 py-2 transition-all duration-300
+                    rounded-b-lg px-1 py-2.5 transition-all duration-300
                     hover:brightness-95 lg:rounded-r-lg lg:rounded-l-none`}
                     onClick={() => setActiveScheduleEventIndex(1)}>
                     {secondDayTitle}
@@ -41,7 +41,7 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
             <table className="text-md mt-6 w-2/3 table-auto border-collapse">
                 <thead>
                     <tr className="border-b-2 border-gray-500">
-                        <th className="py-4 px-4 text-left">Hora</th>
+                        <th className="w-1/3 py-4 px-4 text-left">Hora</th>
                         <th className="text-left">Atividade</th>
                     </tr>
                 </thead>
