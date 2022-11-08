@@ -47,21 +47,21 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
                             </button>
                         </div>
 
-                        <div className="mx-auto flex w-3/4 flex-row items-center justify-around pt-4">
+                        <div className="mx-auto flex w-3/4 flex-row items-center justify-around">
                             <li
-                                className="cursor-pointer list-none text-lg"
+                                className="h-full w-full cursor-pointer list-none py-2 text-center text-lg hover:bg-gray-200"
                                 onClick={() => setActiveTabIndex(0)}>
-                                Tab
+                                Detalhes
                             </li>
                             <li
-                                className="cursor-pointer list-none text-lg"
+                                className="h-full w-full cursor-pointer list-none py-2 text-center text-lg hover:bg-gray-200"
                                 onClick={() => setActiveTabIndex(1)}>
-                                Tab
+                                Links
                             </li>
                             <li
-                                className="cursor-pointer list-none text-lg"
+                                className="h-full w-full cursor-pointer list-none py-2 text-center text-lg hover:bg-gray-200"
                                 onClick={() => setActiveTabIndex(2)}>
-                                Tab
+                                Vídeo
                             </li>
                         </div>
 
