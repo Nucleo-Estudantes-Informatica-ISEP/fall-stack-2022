@@ -4,6 +4,7 @@ import Company from '../Company';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
+import SponsorsContainer from '../SponsorsContainer';
 
 const Content: React.FC = () => {
     return (
@@ -131,46 +132,10 @@ const Content: React.FC = () => {
                 <Company logoHref={critical} name="critical" />
             </div>
 
-            <h1 id="sponsors-title" className="retro my-5 text-center">
-                Patrocinadores
-            </h1>
-            <div className="container-fluid">
-                <div id="sponsors" className="row">
-                    <a
-                        target="_blank"
-                        href="https://aeisep.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/ae.png'}
-                            alt="AE ISEP Logo"
-                        />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://www.dominospizza.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/dominos.png'}
-                            alt="Domino's Pizza Logo"
-                        />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://confeitariamoura.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/moura.png'}
-                            alt="Conf. e Past. Moura Logo"
-                        />
-                    </a>
-                </div>
-            </div>
+            <HeadingText text="Patrocinadores" />
+            <section className="container-fluid">
+                <SponsorsContainer />
+            </section>
 
             <Schedule
                 firstDayTitle="Quinta-Feira - Auditório Magno"
