@@ -17,7 +17,7 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
 
     return (
         <div className="container flex flex-col items-center justify-center">
-            <HeadingText>Horário</HeadingText>
+            <HeadingText text="Horário" />
 
             <div className="flex w-4/5 flex-col justify-center lg:flex-row">
                 <button

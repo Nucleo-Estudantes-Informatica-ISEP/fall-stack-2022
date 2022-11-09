@@ -1,12 +1,10 @@
-import { FunctionComponent } from 'react';
-
 import critical from '../../assets/images/companies/critical.png';
 import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
 
-const Content: FunctionComponent = () => {
+const Content: React.FC = () => {
     return (
         <div className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
             <InfoText days={[15, 16]} month="Dezembro" beggingTime="15:00h" endTime="20:00h" />
@@ -92,7 +90,7 @@ const Content: FunctionComponent = () => {
 
             <hr />
 
-            <HeadingText>Empresas</HeadingText>
+            <HeadingText text="Empresas" />
             <div className="container-fluid">
                 <div id="stands-diamond" className="mb-5">
                     <h2 id="stands-diamond-text" className="text-center ">

@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface Props {
-    children: React.ReactNode;
+interface HeadingTextProps {
+    text: string;
 }
 
-const HeadingText: React.FC<Props> = ({ children }) => {
-    return <h1 className="my-5 text-center text-4xl">{children}</h1>;
+const HeadingText: React.FC<HeadingTextProps> = ({ text }) => {
+    return <h1 className="my-5 text-center text-4xl">{text}</h1>;
 };
 
 export default HeadingText;
