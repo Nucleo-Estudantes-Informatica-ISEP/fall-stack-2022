@@ -30,7 +30,7 @@ const Header: FunctionComponent<HeaderProps> = ({ logoSrc, logoAlt, eventDate, e
                 </h5>
             </div>
 
-            <div className="absolute bottom-0 mx-0 mb-6 h-12 w-12  text-center transition-all duration-500 hover:translate-y-1/2 hover:scale-105">
+            <div className="absolute bottom-0 mx-0 mb-6 h-12 w-12 animate-bounce text-center transition-all duration-500 hover:translate-y-1/2 hover:scale-105">
                 <a className="animate-fade opacity-0 " href="#content">
                     <ChevronDown color="white" size={30} />
                 </a>

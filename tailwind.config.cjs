@@ -7,7 +7,8 @@ module.exports = {
                 'page-background': "url('/src/assets/images/background.png')"
             },
             animation: {
-                fade: 'fade ease-out 1s 1.5s forwards'
+                fade: 'fade ease-out 1s 1.5s forwards',
+                'fade-imm': 'fade ease-out 200ms'
             },
             aspectRatio: {
                 '1080/1080': '1080 / 1080'

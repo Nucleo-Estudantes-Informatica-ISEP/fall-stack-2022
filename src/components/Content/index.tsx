@@ -1,12 +1,12 @@
-import { FunctionComponent } from 'react';
-
-import './styles.css';
-
 import critical from '../../assets/images/companies/critical.png';
+import HeadingText from '../HeadingText';
+import Company from '../Company';
 import InfoText from '../InfoText';
+import Map from '../Map';
 import Schedule from '../Schedule';
+import SponsorsContainer from '../SponsorsContainer';
 
-const Content: FunctionComponent = () => {
+const Content: React.FC = () => {
     return (
         <div className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
             <InfoText days={[15, 16]} month="Dezembro" beggingTime="15:00h" endTime="20:00h" />
@@ -92,294 +92,50 @@ const Content: FunctionComponent = () => {
 
             <hr />
 
-            <h1 className="title my-5 text-center">Empresas</h1>
+            <HeadingText text="Empresas" />
             <div className="container-fluid">
                 <div id="stands-diamond" className="mb-5">
                     <h2 id="stands-diamond-text" className="text-center ">
                         Diamond
                     </h2>
-                    <div></div>
                 </div>
 
                 <div className="row mb-xl-2 justify-content-center">
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-start
-                    stand stand my-2"
-                        data-toggle="modal"
-                        data-target="#minderaModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="170px"
-                            width="170px"
-                            alt="Mindera"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#primaveraModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="200px"
-                            width="200px"
-                            alt="Primavera"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#devScopeModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="200px"
-                            width="200px"
-                            alt="DevScope"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#armisModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="120px"
-                            width="120px"
-                            alt="Armis"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#continentalModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="250px"
-                            width="250px"
-                            alt="Continental"
-                        />
-                    </div>
+                    <Company
+                        logoHref={critical}
+                        name="critical"
+                        modalBodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident"
+                    />
+                    <Company logoHref={critical} name="critical" />
+                    <Company logoHref={critical} name="critical" />
+                    <Company logoHref={critical} name="critical" />
                 </div>
 
                 <div id="stands-gold" className="mb-5">
                     <h3 id="stands-gold-text" className="mt-2 text-center">
                         Gold
                     </h3>
-                    <div></div>
                 </div>
 
-                <div className="row mb-xl-2 justify-content-center">
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex  align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#accentureModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="150px"
-                            width="150px"
-                            alt="Accenture"
-                        />
-                    </div>
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#jscramblerModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="150px"
-                            width="150px"
-                            alt="jscrambler"
-                        />
-                    </div>
-                </div>
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
 
                 <div id="stands-silver" className="mb-5">
                     <h5 id="stands-silver-text" className="mt-5 text-center">
                         Silver
                     </h5>
-                    <div></div>
                 </div>
 
-                <div className="row mb-xl-2 justify-content-center">
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.criticalmanufacturing.com"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="200px"
-                                width="200px"
-                                alt="Critical"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.craftablesoftware.com/"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Craftable"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a href="https://www.byside.com/" target="_blank" rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Byside"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.glintt.com/pt/Paginas/home.aspx"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Glintt"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center
-                    justify-content-center
-                    stand stand my-2">
-                        <a href="https://www.farfetch.com/pt/" target="_blank" rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Farfetch"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a href="https://www.hitachi.eu/pt-pt" target="_blank" rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="200px"
-                                width="200px"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="http://www.konkconsulting.com/PT/"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="150px"
-                                width="150px"
-                                alt="Konk"
-                            />
-                        </a>
-                    </div>
-
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.natixis.com/natixis/en/home-j_6.html"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="180px"
-                                width="180px"
-                                alt="Natixis"
-                            />
-                        </a>
-                    </div>
-                </div>
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
             </div>
 
-            <h1 id="sponsors-title" className="retro my-5 text-center">
-                Patrocinadores
-            </h1>
-            <div className="container-fluid">
-                <div id="sponsors" className="row">
-                    <a
-                        target="_blank"
-                        href="https://aeisep.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/ae.png'}
-                            alt="AE ISEP Logo"
-                        />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://www.dominospizza.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/dominos.png'}
-                            alt="Domino's Pizza Logo"
-                        />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://confeitariamoura.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/moura.png'}
-                            alt="Conf. e Past. Moura Logo"
-                        />
-                    </a>
-                </div>
-            </div>
+            <HeadingText text="Patrocinadores" />
+            <section className="container-fluid">
+                <SponsorsContainer />
+            </section>
 
             <Schedule
                 firstDayTitle="Quinta-Feira - Auditório Magno"
@@ -411,17 +167,7 @@ const Content: FunctionComponent = () => {
                 ]}
             />
 
-            <div>
-                <h1 className="my-5 text-center">Mapa</h1>
-                <img
-                    className="img-fluid d-block map my-2 mx-auto"
-                    src={'./assets/img/map.png'}
-                    alt="Mapa Informativo dos locais das Atividades"
-                    width="850px"
-                    height="850px"
-                    draggable="false"
-                />
-            </div>
+            <Map />
         </div>
     );
 };
