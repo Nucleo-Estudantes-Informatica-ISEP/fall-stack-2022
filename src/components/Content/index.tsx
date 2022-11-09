@@ -1,5 +1,6 @@
 import critical from '../../assets/images/companies/critical.png';
 import HeadingText from '../HeadingText';
+import Company from '../Company';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
@@ -96,246 +97,38 @@ const Content: React.FC = () => {
                     <h2 id="stands-diamond-text" className="text-center ">
                         Diamond
                     </h2>
-                    <div></div>
                 </div>
 
                 <div className="row mb-xl-2 justify-content-center">
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-start
-                    stand stand my-2"
-                        data-toggle="modal"
-                        data-target="#minderaModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="170px"
-                            width="170px"
-                            alt="Mindera"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#primaveraModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="200px"
-                            width="200px"
-                            alt="Primavera"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#devScopeModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="200px"
-                            width="200px"
-                            alt="DevScope"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#armisModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="120px"
-                            width="120px"
-                            alt="Armis"
-                        />
-                    </div>
-
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#continentalModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="250px"
-                            width="250px"
-                            alt="Continental"
-                        />
-                    </div>
+                    <Company
+                        logoHref={critical}
+                        name="critical"
+                        modalBodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident"
+                    />
+                    <Company logoHref={critical} name="critical" />
+                    <Company logoHref={critical} name="critical" />
+                    <Company logoHref={critical} name="critical" />
                 </div>
 
                 <div id="stands-gold" className="mb-5">
                     <h3 id="stands-gold-text" className="mt-2 text-center">
                         Gold
                     </h3>
-                    <div></div>
                 </div>
 
-                <div className="row mb-xl-2 justify-content-center">
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex  align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#accentureModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="150px"
-                            width="150px"
-                            alt="Accenture"
-                        />
-                    </div>
-                    <div
-                        className="col-lg col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2"
-                        data-toggle="modal"
-                        data-target="#jscramblerModal">
-                        <img
-                            className="img-fluid my-3 mx-auto"
-                            src={critical}
-                            height="150px"
-                            width="150px"
-                            alt="jscrambler"
-                        />
-                    </div>
-                </div>
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
 
                 <div id="stands-silver" className="mb-5">
                     <h5 id="stands-silver-text" className="mt-5 text-center">
                         Silver
                     </h5>
-                    <div></div>
                 </div>
 
-                <div className="row mb-xl-2 justify-content-center">
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.criticalmanufacturing.com"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="200px"
-                                width="200px"
-                                alt="Critical"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.craftablesoftware.com/"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Craftable"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a href="https://www.byside.com/" target="_blank" rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Byside"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.glintt.com/pt/Paginas/home.aspx"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Glintt"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center
-                    justify-content-center
-                    stand stand my-2">
-                        <a href="https://www.farfetch.com/pt/" target="_blank" rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="140px"
-                                width="140px"
-                                alt="Farfetch"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a href="https://www.hitachi.eu/pt-pt" target="_blank" rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="200px"
-                                width="200px"
-                            />
-                        </a>
-                    </div>
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="http://www.konkconsulting.com/PT/"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="150px"
-                                width="150px"
-                                alt="Konk"
-                            />
-                        </a>
-                    </div>
-
-                    <div
-                        className="col-lg-3 col-sm-4 col-xs-12 d-flex align-items-center justify-content-center
-                    stand my-2">
-                        <a
-                            href="https://www.natixis.com/natixis/en/home-j_6.html"
-                            target="_blank"
-                            rel="noreferrer">
-                            <img
-                                className="img-fluid my-3 mx-auto"
-                                src={critical}
-                                height="180px"
-                                width="180px"
-                                alt="Natixis"
-                            />
-                        </a>
-                    </div>
-                </div>
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
+                <Company logoHref={critical} name="critical" />
             </div>
 
             <h1 id="sponsors-title" className="retro my-5 text-center">

@@ -18,13 +18,12 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
     return (
         <div className="container flex flex-col items-center justify-center">
             <HeadingText text="Horário" />
-
-            <div className="flex w-4/5 flex-col justify-center lg:flex-row">
+            <div className="flex w-full flex-col justify-center lg:w-4/5 lg:flex-row">
                 <button
                     className={`
                     ${activeScheduleEventIndex == 0 ? 'bg-orange-400' : 'bg-gray-200'}
                     ${activeScheduleEventIndex == 0 ? 'text-white' : 'text-black'}
-                    w-full rounded-t-lg py-2 hover:brightness-95 lg:rounded-l-lg lg:rounded-r-none`}
+                    w-full rounded-t-lg py-2.5 hover:brightness-95 lg:rounded-l-lg lg:rounded-r-none`}
                     onClick={() => setActiveScheduleEventIndex(0)}>
                     {firstDayTitle}
                 </button>
@@ -33,17 +32,17 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
                     ${activeScheduleEventIndex == 1 ? 'bg-orange-400' : 'bg-gray-200'} 
                     ${activeScheduleEventIndex == 1 ? 'text-white' : 'text-black'}
                     w-full
-                    rounded-b-lg px-1 py-2 transition-all duration-300
+                    rounded-b-lg px-1 py-2.5 transition-all duration-300
                     hover:brightness-95 lg:rounded-r-lg lg:rounded-l-none`}
                     onClick={() => setActiveScheduleEventIndex(1)}>
                     {secondDayTitle}
                 </button>
             </div>
-            <table className="text-md mt-6 w-2/3 table-auto border-collapse">
+            <table className="text-md w-98 mt-6 table-auto border-collapse lg:w-2/3">
                 <thead>
                     <tr className="border-b-2 border-gray-500">
-                        <th className="py-4 px-4 text-left">Hora</th>
-                        <th className="text-left">Atividade</th>
+                        <th className="w-1/3 py-4 px-4 text-left">Hora</th>
+                        <th className="py-4 text-left">Atividade</th>
                     </tr>
                 </thead>
 
@@ -51,7 +50,7 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
                     {scheduleEvents[activeScheduleEventIndex].map((entry, index) => (
                         <tr className="border-b-2 border-gray-500" key={index}>
                             <td className="py-4 px-4">{entry.hour}</td>
-                            <td>{entry.activity}</td>
+                            <td className="py-4 pr-4">{entry.activity}</td>
                         </tr>
                     ))}
                 </tbody>
