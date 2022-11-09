@@ -6,8 +6,8 @@ import { SPONSORS } from '../../utils/companies';
 const SponsorsContainer: React.FC = () => {
     return (
         <div className="flex flex-wrap items-center justify-center">
-            {SPONSORS.map(({ name, logo, website }) => (
-                <Sponsor logoHref={logo} name={name} website={website} />
+            {SPONSORS.map(({ id, name, logo, website }) => (
+                <Sponsor key={id} logoHref={logo} name={name} website={website} />
             ))}
         </div>
     );
