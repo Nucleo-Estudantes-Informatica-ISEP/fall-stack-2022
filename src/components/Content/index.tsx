@@ -133,9 +133,9 @@ const Content: React.FC = () => {
             </div>
 
             <HeadingText text="Patrocinadores" />
-            <div className="container-fluid">
+            <section className="container-fluid">
                 <SponsorsContainer />
-            </div>
+            </section>
 
             <Schedule
                 firstDayTitle="Quinta-Feira - Auditório Magno"
