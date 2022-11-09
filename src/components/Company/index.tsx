@@ -1,13 +1,13 @@
 import React from 'react';
 import Modal from '../Modal';
 
-interface Props {
+interface CompanyProps {
     logoHref: string;
     name: string;
     modalBodyText?: string;
 }
 
-const Company: React.FC<Props> = ({ logoHref, name, modalBodyText }) => {
+const Company: React.FC<CompanyProps> = ({ logoHref, name, modalBodyText }) => {
     const [isHidden, setIsHidden] = React.useState(true);
 
     return (
