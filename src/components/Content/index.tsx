@@ -3,64 +3,30 @@ import { FunctionComponent } from 'react';
 import './styles.css';
 
 import critical from '../../assets/images/companies/critical.png';
+import interview from '../../assets/images/interview.png';
+// Ayo, guys, don't forge to change this "roundtables" later!
+import roundtables from '../../assets/images/roundtables.png';
 import Company from '../Company';
 import InfoText from '../InfoText';
 import Schedule from '../Schedule';
+import Activity from '../Activity';
 
 const Content: FunctionComponent = () => {
     return (
         <div className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
             <InfoText days={[15, 16]} month="Dezembro" beggingTime="15:00h" endTime="20:00h" />
 
-            <div id="content-activity-main-container">
-                <div id="content-activity-container">
-                    <div id="content-activity-image-container">
-                        <img
-                            id="content-activity-image"
-                            src={'assets/img/interview.png'}
-                            alt="interview"
-                        />
-                    </div>
-                    <div id="content-activity">
-                        <h5>
-                            Sessão de Entrevistas
-                            <br />
-                            (Dia 13)
-                        </h5>
-                        <div id="content-activity-text">
-                            <p>
-                                O objetivo da <strong>Sessão de Entrevistas</strong> é as empresas
-                                presentes darem-se a conhecer aos estudantes, através de uma breve
-                                apresentação e esclarecendo as questões que os estudantes tiverem
-                                para colocar.
-                            </p>
-                        </div>
-                    </div>
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-x-5 justify-items-center my-16">
+                <div className="col-span-1">
+                    <Activity logo={interview} title={"Sessão de entrevistas"} day={13}>
+                        O objetivo da <strong>Sessão de Entrevistas</strong> é as empresas presentes darem-se a conhecer aos estudantes, através de uma breve apresentação e esclarecendo as questões que os estudantes tiverem para colocar.
+                    </Activity>
                 </div>
 
-                <div id="content-activity-container">
-                    <div id="content-activity-image-container">
-                        <img
-                            id="content-activity-image"
-                            src={'assets/img/roundtables.png'}
-                            alt="round tables"
-                        />
-                    </div>
-                    <div id="content-activity">
-                        <h5>
-                            Round Tables
-                            <br />
-                            (Dia 14)
-                        </h5>
-                        <div id="content-activity-text">
-                            <p>
-                                O objetivo das <strong>Round Tables</strong> é o estudante ter
-                                contacto com todas as empresas presentes no evento. Poderão ainda
-                                entrar em contacto com as empresas que mais despertaram interesse{' '}
-                                <b>sem restrições de tempo!</b>
-                            </p>
-                        </div>
-                    </div>
+                <div className="col-span-1">
+                    <Activity logo={roundtables} title={"Connection's train"} description={"Descrição top"} day={14}>
+                        O objetivo das <strong>Round Tables</strong> é o estudante ter contacto com todas as empresas presentes no evento. <br /> Poderão ainda entrar em contacto com as empresas que mais despertaram interesse <strong>sem restrições de tempo</strong>!
+                    </Activity>
                 </div>
             </div>
 
