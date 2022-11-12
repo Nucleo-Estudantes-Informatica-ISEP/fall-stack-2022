@@ -8,10 +8,12 @@ import Roundtables from '../../assets/images/roundtables.png';
 
 import Company from '../Company';
 import InfoText from '../InfoText';
+import Map from '../Map';
 import Schedule from '../Schedule';
 import Activity from '../Activity';
+import SponsorsContainer from '../SponsorsContainer';
 
-const Content: FunctionComponent = () => {
+const Content: React.FC = () => {
     return (
         <section className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
             <InfoText days={[15, 16]} month="Dezembro" begginingTime="15:00h" endTime="20:00h" />
@@ -63,7 +65,7 @@ const Content: FunctionComponent = () => {
 
             <hr />
 
-            <h1 className="title my-5 text-center">Empresas</h1>
+            <HeadingText text="Empresas" />
 
             <div className="container-fluid">
                 <div id="stands-diamond" className="mb-5">
@@ -104,46 +106,10 @@ const Content: FunctionComponent = () => {
                 <Company logoHref={Critical} name="Critical" />
             </div>
 
-            <h1 id="sponsors-title" className="retro my-5 text-center">
-                Patrocinadores
-            </h1>
-            <div className="container-fluid">
-                <div id="sponsors" className="row">
-                    <a
-                        target="_blank"
-                        href="https://aeisep.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/ae.png'}
-                            alt="AE ISEP Logo"
-                        />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://www.dominospizza.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/dominos.png'}
-                            alt="Domino's Pizza Logo"
-                        />
-                    </a>
-                    <a
-                        target="_blank"
-                        href="https://confeitariamoura.pt/"
-                        className="sponsor-container my-2"
-                        rel="noreferrer">
-                        <img
-                            className="img-fluid d-block sponsor my-4 mx-auto"
-                            src={'./assets/img/sponsors/moura.png'}
-                            alt="Conf. e Past. Moura Logo"
-                        />
-                    </a>
-                </div>
-            </div>
+            <HeadingText text="Patrocinadores" />
+            <section className="container-fluid">
+                <SponsorsContainer />
+            </section>
 
             <Schedule
                 firstDayTitle="Quinta-Feira - Auditório Magno"
@@ -175,18 +141,8 @@ const Content: FunctionComponent = () => {
                 ]}
             />
 
-            <div>
-                <h1 className="my-5 text-center">Mapa</h1>
-                <img
-                    className="img-fluid d-block map my-2 mx-auto"
-                    src={'./assets/img/map.png'}
-                    alt="Mapa Informativo dos locais das Atividades"
-                    width="850px"
-                    height="850px"
-                    draggable="false"
-                />
-            </div>
-        </section>
+            <Map />
+        </div>
     );
 };
 

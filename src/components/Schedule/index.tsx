@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HeadingText from '../HeadingText';
 
 interface ScheduleDay {
     hour: string;
@@ -15,9 +16,8 @@ const Schedule: React.FC<Props> = ({ firstDayTitle, secondDayTitle, scheduleEven
     const [activeScheduleEventIndex, setActiveScheduleEventIndex] = useState<number>(0);
 
     return (
-        <div className="container flex w-full flex-col items-center justify-center">
-            <h1 className="my-5 text-center text-4xl">Horário</h1>
-
+        <div className="container flex flex-col items-center justify-center">
+            <HeadingText text="Horário" />
             <div className="flex w-full flex-col justify-center lg:w-4/5 lg:flex-row">
                 <button
                     className={`

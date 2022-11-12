@@ -1,6 +1,7 @@
 import React from 'react';
+import HeadingText from '../HeadingText';
 
-interface Props {
+interface InfoTextProps {
     days: number[];
     month: string;
     begginingTime: string;
@@ -10,7 +11,7 @@ interface Props {
 const InfoText: React.FC<Props> = ({ days, month, begginingTime, endTime }) => {
     return (
         <>
-            <h1 className="mt-5 mb-4 text-center text-4xl">O que é o Fallstack?</h1>
+            <HeadingText text="O que é o Fallstack?" />
             <div id="intro-info" className="my-4">
                 <span id="calendar-span">
                     {/* Missing Icon */}
