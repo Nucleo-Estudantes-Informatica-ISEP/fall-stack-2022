@@ -2,10 +2,10 @@ import { FunctionComponent } from 'react';
 
 import './styles.css';
 
-import critical from '../../assets/images/companies/critical.png';
-import interview from '../../assets/images/interview.png';
-// Ayo, guys, don't forge to change this "roundtables" later!
-import roundtables from '../../assets/images/roundtables.png';
+import Critical from '../../assets/images/companies/Critical.png';
+import Interview from '../../assets/images/interview.png';
+import Roundtables from '../../assets/images/roundtables.png';
+
 import Company from '../Company';
 import InfoText from '../InfoText';
 import Schedule from '../Schedule';
@@ -13,29 +13,33 @@ import Activity from '../Activity';
 
 const Content: FunctionComponent = () => {
     return (
-        <div className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
-            <InfoText days={[15, 16]} month="Dezembro" beggingTime="15:00h" endTime="20:00h" />
+        <section className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
+            <InfoText days={[15, 16]} month="Dezembro" begginingTime="15:00h" endTime="20:00h" />
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-x-5 justify-items-center my-16">
+            <section className="my-16 grid w-full grid-cols-1 justify-items-center gap-y-10 md:grid-cols-2 md:gap-x-5">
                 <div className="col-span-1">
-                    <Activity logo={interview} title={"Sessão de entrevistas"} day={13}>
-                        O objetivo da <strong>Sessão de Entrevistas</strong> é as empresas presentes darem-se a conhecer aos estudantes, através de uma breve apresentação e esclarecendo as questões que os estudantes tiverem para colocar.
+                    <Activity logo={Interview} title={'Sessão de entrevistas'} day={13}>
+                        O objetivo da <strong>Sessão de Entrevistas</strong> é as empresas presentes
+                        darem-se a conhecer aos estudantes, através de uma breve apresentação e
+                        esclarecendo as questões que os estudantes tiverem para colocar.
                     </Activity>
                 </div>
 
                 <div className="col-span-1">
-                    <Activity logo={roundtables} title={"Connection's train"} description={"Descrição top"} day={14}>
-                        O objetivo das <strong>Round Tables</strong> é o estudante ter contacto com todas as empresas presentes no evento. <br /> Poderão ainda entrar em contacto com as empresas que mais despertaram interesse <strong>sem restrições de tempo</strong>!
+                    <Activity logo={Roundtables} title={"Connection's train"} day={14}>
+                        O objetivo das <strong>Round Tables</strong> é o estudante ter contacto com
+                        todas as empresas presentes no evento. <br /> Poderão ainda entrar em
+                        contacto com as empresas que mais despertaram interesse{' '}
+                        <strong>sem restrições de tempo</strong>!
                     </Activity>
                 </div>
-            </div>
+            </section>
 
             <hr />
 
             <div
                 id="content-enrollment-container"
-                className="d-flex flex-column align-items-center justify-content-center
-          text-center">
+                className="d-flex flex-column align-items-center justify-content-center text-center">
                 <h1 className="my-5 text-center">Inscrições</h1>
 
                 <a
@@ -60,6 +64,7 @@ const Content: FunctionComponent = () => {
             <hr />
 
             <h1 className="title my-5 text-center">Empresas</h1>
+
             <div className="container-fluid">
                 <div id="stands-diamond" className="mb-5">
                     <h2 id="stands-diamond-text" className="text-center ">
@@ -69,13 +74,13 @@ const Content: FunctionComponent = () => {
 
                 <div className="row mb-xl-2 justify-content-center">
                     <Company
-                        logoHref={critical}
-                        name="critical"
+                        logoHref={Critical}
+                        name="Critical"
                         modalBodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident"
                     />
-                    <Company logoHref={critical} name="critical" />
-                    <Company logoHref={critical} name="critical" />
-                    <Company logoHref={critical} name="critical" />
+                    <Company logoHref={Critical} name="Critical" />
+                    <Company logoHref={Critical} name="Critical" />
+                    <Company logoHref={Critical} name="Critical" />
                 </div>
 
                 <div id="stands-gold" className="mb-5">
@@ -84,8 +89,8 @@ const Content: FunctionComponent = () => {
                     </h3>
                 </div>
 
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
 
                 <div id="stands-silver" className="mb-5">
                     <h5 id="stands-silver-text" className="mt-5 text-center">
@@ -93,10 +98,10 @@ const Content: FunctionComponent = () => {
                     </h5>
                 </div>
 
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
             </div>
 
             <h1 id="sponsors-title" className="retro my-5 text-center">
@@ -181,7 +186,7 @@ const Content: FunctionComponent = () => {
                     draggable="false"
                 />
             </div>
-        </div>
+        </section>
     );
 };
 

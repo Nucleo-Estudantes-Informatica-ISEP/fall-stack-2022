@@ -3,11 +3,11 @@ import React from 'react';
 interface Props {
     days: number[];
     month: string;
-    beggingTime: string;
+    begginingTime: string;
     endTime: string;
 }
 
-const InfoText: React.FC<Props> = ({ days, month, beggingTime, endTime }) => {
+const InfoText: React.FC<Props> = ({ days, month, begginingTime, endTime }) => {
     return (
         <>
             <h1 className="mt-5 mb-4 text-center text-4xl">O que é o Fallstack?</h1>
@@ -21,7 +21,7 @@ const InfoText: React.FC<Props> = ({ days, month, beggingTime, endTime }) => {
                 <span id="alarm-span">
                     {/* Missing Icon */}
                     <b>
-                        {beggingTime} - {endTime}
+                        {begginingTime} - {endTime}
                     </b>
                 </span>
                 <span id="location-span">

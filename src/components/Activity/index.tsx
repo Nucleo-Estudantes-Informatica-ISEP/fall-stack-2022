@@ -1,32 +1,28 @@
+import { FunctionComponent } from 'react';
+
 interface ActivityProps {
-	logo: string;
-	title: string;
-	day: number;
+    logo: string;
+    title: string;
+    day: number;
+    children?: React.ReactNode;
 }
 
 const Activity: FunctionComponent<ActivityProps> = ({ logo, title, day, children }) => {
-	return(
-		<div className="w-full flex flex-col items-center justify-center text-center">
+    return (
+        <section className="flex w-full flex-col items-center justify-center text-center">
             <div id="w-full">
-                <img
-                    id="content-activity-image"
-                    src={logo}
-                    alt={title + " image"}
-                    className="w-32"
-                />
+                <img src={logo} alt={`Atividade ${title}`} className="w-32" />
             </div>
-            <div className="content-activity">
-                <h5 className="font-good__times my-5 text-2xl text-gray-600">
+            <div>
+                <h5 className="my-5 font-good__times text-2xl text-gray-600">
                     {title}
                     <br />
                     (Dia {day})
                 </h5>
-                <div className="leading-7 text-lg">
-                    {children}
-                </div>
+                <div className="text-lg leading-7">{children}</div>
             </div>
-        </div>
-	);
-}
+        </section>
+    );
+};
 
 export default Activity;
