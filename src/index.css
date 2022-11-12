@@ -4,6 +4,8 @@
 
 @import './reset.css';
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css");
+
 @layer base {
     @font-face {
         font-family: 'Good Times';
