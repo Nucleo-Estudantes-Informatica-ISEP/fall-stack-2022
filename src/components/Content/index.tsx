@@ -1,16 +1,12 @@
-import { FunctionComponent } from 'react';
-
-import './styles.css';
-
-import Critical from '../../assets/images/companies/Critical.png';
+import Critical from '../../assets/images/companies/critical.png';
 import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
-
+import Activity from '../Activity';
 import Company from '../Company';
+import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
-import Activity from '../Activity';
 import SponsorsContainer from '../SponsorsContainer';
 
 const Content: React.FC = () => {
@@ -142,7 +138,7 @@ const Content: React.FC = () => {
             />
 
             <Map />
-        </div>
+        </section>
     );
 };
 
