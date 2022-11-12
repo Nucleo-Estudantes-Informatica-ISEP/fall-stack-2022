@@ -1,74 +1,47 @@
-import critical from '../../assets/images/companies/critical.png';
-import HeadingText from '../HeadingText';
+import { FunctionComponent } from 'react';
+
+import './styles.css';
+
+import Critical from '../../assets/images/companies/Critical.png';
+import Interview from '../../assets/images/interview.png';
+import Roundtables from '../../assets/images/roundtables.png';
+
 import Company from '../Company';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
+import Activity from '../Activity';
 import SponsorsContainer from '../SponsorsContainer';
 
 const Content: React.FC = () => {
     return (
-        <div className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
-            <InfoText days={[15, 16]} month="Dezembro" beggingTime="15:00h" endTime="20:00h" />
+        <section className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
+            <InfoText days={[15, 16]} month="Dezembro" begginingTime="15:00h" endTime="20:00h" />
 
-            <div id="content-activity-main-container">
-                <div id="content-activity-container">
-                    <div id="content-activity-image-container">
-                        <img
-                            id="content-activity-image"
-                            src={'assets/img/interview.png'}
-                            alt="interview"
-                        />
-                    </div>
-                    <div id="content-activity">
-                        <h5>
-                            Sessão de Entrevistas
-                            <br />
-                            (Dia 13)
-                        </h5>
-                        <div id="content-activity-text">
-                            <p>
-                                O objetivo da <strong>Sessão de Entrevistas</strong> é as empresas
-                                presentes darem-se a conhecer aos estudantes, através de uma breve
-                                apresentação e esclarecendo as questões que os estudantes tiverem
-                                para colocar.
-                            </p>
-                        </div>
-                    </div>
+            <section className="my-16 grid w-full grid-cols-1 justify-items-center gap-y-10 md:grid-cols-2 md:gap-x-5">
+                <div className="col-span-1">
+                    <Activity logo={Interview} title={'Sessão de entrevistas'} day={13}>
+                        O objetivo da <strong>Sessão de Entrevistas</strong> é as empresas presentes
+                        darem-se a conhecer aos estudantes, através de uma breve apresentação e
+                        esclarecendo as questões que os estudantes tiverem para colocar.
+                    </Activity>
                 </div>
 
-                <div id="content-activity-container">
-                    <div id="content-activity-image-container">
-                        <img
-                            id="content-activity-image"
-                            src={'assets/img/roundtables.png'}
-                            alt="round tables"
-                        />
-                    </div>
-                    <div id="content-activity">
-                        <h5>
-                            Round Tables
-                            <br />
-                            (Dia 14)
-                        </h5>
-                        <div id="content-activity-text">
-                            <p>
-                                O objetivo das <strong>Round Tables</strong> é o estudante ter
-                                contacto com todas as empresas presentes no evento. Poderão ainda
-                                entrar em contacto com as empresas que mais despertaram interesse{' '}
-                                <b>sem restrições de tempo!</b>
-                            </p>
-                        </div>
-                    </div>
+                <div className="col-span-1">
+                    <Activity logo={Roundtables} title={"Connection's train"} day={14}>
+                        O objetivo das <strong>Round Tables</strong> é o estudante ter contacto com
+                        todas as empresas presentes no evento. <br /> Poderão ainda entrar em
+                        contacto com as empresas que mais despertaram interesse{' '}
+                        <strong>sem restrições de tempo</strong>!
+                    </Activity>
                 </div>
-            </div>
+            </section>
 
             <hr />
 
             <div
                 id="content-enrollment-container"
-                className="d-flex flex-column align-items-center justify-content-center
-          text-center">
+                className="d-flex flex-column align-items-center justify-content-center text-center">
                 <h1 className="my-5 text-center">Inscrições</h1>
 
                 <a
@@ -93,6 +66,7 @@ const Content: React.FC = () => {
             <hr />
 
             <HeadingText text="Empresas" />
+
             <div className="container-fluid">
                 <div id="stands-diamond" className="mb-5">
                     <h2 id="stands-diamond-text" className="text-center ">
@@ -102,13 +76,13 @@ const Content: React.FC = () => {
 
                 <div className="row mb-xl-2 justify-content-center">
                     <Company
-                        logoHref={critical}
-                        name="critical"
+                        logoHref={Critical}
+                        name="Critical"
                         modalBodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident"
                     />
-                    <Company logoHref={critical} name="critical" />
-                    <Company logoHref={critical} name="critical" />
-                    <Company logoHref={critical} name="critical" />
+                    <Company logoHref={Critical} name="Critical" />
+                    <Company logoHref={Critical} name="Critical" />
+                    <Company logoHref={Critical} name="Critical" />
                 </div>
 
                 <div id="stands-gold" className="mb-5">
@@ -117,8 +91,8 @@ const Content: React.FC = () => {
                     </h3>
                 </div>
 
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
 
                 <div id="stands-silver" className="mb-5">
                     <h5 id="stands-silver-text" className="mt-5 text-center">
@@ -126,10 +100,10 @@ const Content: React.FC = () => {
                     </h5>
                 </div>
 
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
-                <Company logoHref={critical} name="critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
+                <Company logoHref={Critical} name="Critical" />
             </div>
 
             <HeadingText text="Patrocinadores" />
