@@ -4,11 +4,11 @@ import HeadingText from '../HeadingText';
 interface InfoTextProps {
     days: number[];
     month: string;
-    beggingTime: string;
+    begginingTime: string;
     endTime: string;
 }
 
-const InfoText: React.FC<InfoTextProps> = ({ days, month, beggingTime, endTime }) => {
+const InfoText: React.FC<Props> = ({ days, month, begginingTime, endTime }) => {
     return (
         <>
             <HeadingText text="O que é o Fallstack?" />
@@ -22,7 +22,7 @@ const InfoText: React.FC<InfoTextProps> = ({ days, month, beggingTime, endTime }
                 <span id="alarm-span">
                     {/* Missing Icon */}
                     <b>
-                        {beggingTime} - {endTime}
+                        {begginingTime} - {endTime}
                     </b>
                 </span>
                 <span id="location-span">
