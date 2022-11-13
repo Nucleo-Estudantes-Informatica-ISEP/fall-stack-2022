@@ -2,7 +2,7 @@ import InscriptionFigure from '../../assets/images/google-forms.png';
 import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
 import Activity from '../Activity';
-import CompanyContainer from '../CompanyContainer';
+import CompaniesSection from '../CompaniesSection';
 import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
 import Map from '../Map';
@@ -54,7 +54,7 @@ const Content: React.FC = () => {
 
             <hr />
 
-            <CompanyContainer></CompanyContainer>
+            <CompaniesSection />
 
             <HeadingText text="Patrocinadores" />
             <section className="container-fluid">
