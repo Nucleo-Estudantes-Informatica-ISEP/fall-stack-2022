@@ -1,6 +1,5 @@
 import { FunctionComponent } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter } from 'react-bootstrap-icons';
-import './style.css';
 
 interface FooterProps {
     lastEditionUrl: string;
