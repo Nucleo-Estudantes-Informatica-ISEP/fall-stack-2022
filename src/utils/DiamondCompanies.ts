@@ -1,16 +1,15 @@
-import BysideLogoWithColors from '../../assets/images/companies/diamond/byside/byside_logo_colorid.png';
-import CriticalLogo from '../../assets/images/companies/diamond/critical_logo.png';
-import DevscopeLogo from '../../assets/images/companies/diamond/devscope_logo.png';
-import { CompanyProps } from '../../components/Company';
+import { CompanyProps } from '../components/Company';
+import {
+    BysideLogoWithColors,
+    ContinentalLogo,
+    CriticalLogo,
+    DevscopeLogo,
+    FabamaqLogo,
+    HitachiLogo,
+    SonaeLogo
+} from './CompaniesImages';
 
-/**
-    Gold Companies
-    Accenture: 
-    Parfois:
-    Natixis: 
- */
-
-export const GoldCompanies: CompanyProps[] = [
+export const DiamondCompanies: CompanyProps[] = [
     {
         logoHref: CriticalLogo,
         name: 'Critical Manufacturing Logo',
@@ -24,5 +23,21 @@ export const GoldCompanies: CompanyProps[] = [
     {
         logoHref: BysideLogoWithColors,
         name: 'Byside Logo'
+    },
+    {
+        logoHref: HitachiLogo,
+        name: 'Hitachi Logo'
+    },
+    {
+        logoHref: ContinentalLogo,
+        name: 'Continental Logo'
+    },
+    {
+        logoHref: FabamaqLogo,
+        name: 'FabamaqLogo Logo'
+    },
+    {
+        logoHref: SonaeLogo,
+        name: 'Sonae Logo'
     }
 ];

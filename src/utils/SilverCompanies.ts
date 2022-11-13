@@ -1,7 +1,5 @@
-import BysideLogoWithColors from '../../assets/images/companies/diamond/byside/byside_logo_colorid.png';
-import CriticalLogo from '../../assets/images/companies/diamond/critical_logo.png';
-import DevscopeLogo from '../../assets/images/companies/diamond/devscope_logo.png';
-import { CompanyProps } from '../../components/Company';
+import { CompanyProps } from '../components/Company';
+import { BysideLogoWithColors, CriticalLogo, DevscopeLogo } from './CompaniesImages';
 
 /**
     TODO 

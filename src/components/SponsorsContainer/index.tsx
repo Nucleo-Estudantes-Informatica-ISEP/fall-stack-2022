@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useId } from 'react';
+import { Sponsors } from '../../utils/Sponsors';
 import Sponsor from '../Sponsor';
-
-import { SPONSORS } from '../../utils/companies';
 
 const SponsorsContainer: React.FC = () => {
     return (
         <div className="flex flex-wrap items-center justify-center">
-            {SPONSORS.map(({ id, name, logo, website }) => (
-                <Sponsor key={id} logoHref={logo} name={name} website={website} />
-            ))}
+            {Sponsors.map(({ name, logoHref, website }) => {
+                const id = useId();
+                return <Sponsor key={id} logoHref={logoHref} name={name} website={website} />;
+            })}
         </div>
     );
 };
