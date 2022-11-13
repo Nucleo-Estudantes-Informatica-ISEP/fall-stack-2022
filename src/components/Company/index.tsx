@@ -11,13 +11,13 @@ const Company: React.FC<CompanyProps> = ({ logoHref, name, modalBodyText }) => {
 
     return (
         <>
-            <li
+            <div
                 className={`
                 ${modalBodyText && 'cursor-pointer'} 
-                 my-2 max-h-32 w-full list-none transition duration-300 ease-in-out hover:scale-105 `}
+                 my-2 flex h-32 w-full items-center justify-center transition duration-300 ease-in-out hover:scale-105 `}
                 onClick={() => setIsHidden(false)}>
-                <img className="h-auto max-w-full " src={logoHref} alt={name} />
-            </li>
+                <img className="max-h-32" src={logoHref} alt={name} />
+            </div>
             {/** modalBodyText && (
                 <Modal
                     setHidden={setIsHidden}

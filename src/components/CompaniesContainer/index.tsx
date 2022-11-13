@@ -30,7 +30,7 @@ const CompaniesContainer: FunctionComponent<CompaniesContainerProps> = ({ tier, 
                 </h2>
             </div>
 
-            <div className="grid items-center justify-center lg:grid-cols-4">
+            <div className="mt-12 grid grid-cols-responsiveness-180px-columns place-items-center xl:grid-cols-3">
                 {companies.map(({ logoHref, name, modalBodyText }) => {
                     const companyId = useId();
                     return (

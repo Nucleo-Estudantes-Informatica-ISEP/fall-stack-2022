@@ -11,7 +11,7 @@ import SponsorsContainer from '../SponsorsContainer';
 
 const Content: React.FC = () => {
     return (
-        <section className="center container mx-auto w-3/4 rounded-lg bg-slate-100 p-14">
+        <section className="center container mx-auto w-11/12 rounded-lg bg-slate-100 p-6 sm:w-3/4 lg:p-14">
             <InfoText days={[15, 16]} month="Dezembro" begginingTime="15:00h" endTime="20:00h" />
 
             <section className="my-16 grid w-full grid-cols-1 justify-items-center gap-y-10 md:grid-cols-2 md:gap-x-5">

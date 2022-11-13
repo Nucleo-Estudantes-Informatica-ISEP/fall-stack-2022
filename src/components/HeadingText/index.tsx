@@ -5,7 +5,9 @@ interface HeadingTextProps {
 }
 
 const HeadingText: React.FC<HeadingTextProps> = ({ text }) => {
-    return <h1 className="my-12 text-center font-good__times text-6xl text-neutral-600">{text}</h1>;
+    return (
+        <h1 className="my-12 text-center font-good__times text-neutral-600 lg:text-6xl">{text}</h1>
+    );
 };
 
 export default HeadingText;
