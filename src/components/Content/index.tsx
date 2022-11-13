@@ -56,10 +56,14 @@ const Content: React.FC = () => {
 
             <CompaniesSection />
 
+            <hr />
+
             <HeadingText text="Patrocinadores" />
             <section className="container-fluid">
                 <SponsorsContainer />
             </section>
+
+            <hr />
 
             <Schedule
                 firstDayTitle="Quinta-Feira - Auditório Magno"
@@ -90,6 +94,8 @@ const Content: React.FC = () => {
                     ]
                 ]}
             />
+
+            <hr />
 
             <Map />
         </section>
