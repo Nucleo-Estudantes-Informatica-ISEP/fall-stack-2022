@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useId } from 'react';
 
-import { X } from 'react-bootstrap-icons';
+import { Facebook, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
 import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
 
@@ -17,15 +17,53 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
     const [activeTabIndex, setActiveTabIndex] = React.useState(0);
 
     const tabs: React.ReactNode[] = [
-        <p key={0} className="mb-4 text-lg leading-relaxed text-slate-500">
+        <p key={useId()} className="mb-4 text-lg leading-relaxed text-slate-500">
             {bodyText}
         </p>,
-        <p key={1} className="mb-4 text-lg leading-relaxed text-slate-500">
-            Tab 2
-        </p>,
-        <p key={2} className="mb-4 text-lg leading-relaxed text-slate-500">
-            Tab 3
-        </p>
+        <ul key={useId()} className="flex flex-row flex-wrap items-center justify-around px-4">
+            <li className="mx-4 my-2 list-none">
+                <a
+                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
+                    href="#">
+                    <Twitter className="mr-2" />
+                    Twitter
+                </a>
+            </li>
+            <li className="mx-4 my-2 list-none">
+                <a
+                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
+                    href="#">
+                    <Linkedin className="mr-2" />
+                    Linkedin
+                </a>
+            </li>
+            <li className="mx-4 my-2 list-none">
+                <a
+                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
+                    href="#">
+                    <Facebook className="mr-2" />
+                    Facebook
+                </a>
+            </li>
+            <li className="mx-4 my-2 list-none">
+                <a
+                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
+                    href="#">
+                    <Youtube className="mr-2" />
+                    Youtube
+                </a>
+            </li>
+        </ul>,
+        <div className="flex h-full w-full items-center justify-center" key={useId()}>
+            <iframe
+                className="rounded-lg"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/hYuAnuUIJTY"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
     ];
 
     return (
@@ -34,7 +72,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
             ${hidden ? 'hidden' : 'fixed'} 
             inset-0 animate-fade-imm bg-gray-700/60
             transition-opacity`}>
-            <div className="fixed inset-0 z-10 my-auto flex h-3/4 items-center justify-center overflow-x-hidden overflow-y-scroll rounded-lg outline-none focus:outline-none md:h-1/2">
+            <div className="fixed inset-0 z-10 my-auto flex h-4/5 items-center justify-center overflow-x-hidden overflow-y-scroll rounded-lg outline-none focus:outline-none md:h-3/5">
                 <div className="relative mx-auto h-full w-4/5 max-w-3xl rounded-lg">
                     <div className="min-h-full w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
                         <div className="flex w-full items-start justify-between rounded-t border-b border-solid border-slate-200 p-5">
