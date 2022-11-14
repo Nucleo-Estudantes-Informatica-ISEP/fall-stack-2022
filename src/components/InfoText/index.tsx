@@ -14,7 +14,7 @@ const InfoText: React.FC<InfoTextProps> = ({ days, month, begginingTime, endTime
         <>
             <HeadingText text="O que é o Fallstack?" />
 
-            <div id="intro-info" className="my-4">
+            <div className="my-4">
                 <span id="calendar-span">
                     {/* Missing Icon */}
                     <b>
