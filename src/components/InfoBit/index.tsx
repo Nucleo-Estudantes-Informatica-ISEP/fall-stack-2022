@@ -1,14 +1,14 @@
 import { FunctionComponent } from 'react';
 
 interface InfoBitProps {
-    icon: string;
+    icon: React.ReactNode;
     info: string;
 }
 
 const InfoBit: FunctionComponent<InfoBitProps> = ({ icon, info }) => {
     return (
         <span className="flex items-center justify-center">
-            <i className={`${icon} text-3xl`} />
+            <span className="text-3xl">{icon}</span>
             <b className="ml-3">{info}</b>
         </span>
     );
