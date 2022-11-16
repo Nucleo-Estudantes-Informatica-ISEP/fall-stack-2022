@@ -3,6 +3,7 @@ import React, { useEffect, useId } from 'react';
 import { Facebook, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
 import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
+import SocialMediaCard from '../SocialMediaCard';
 
 const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => {
     useEffect(() => {
@@ -21,38 +22,10 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
             {bodyText}
         </p>,
         <ul key={useId()} className="flex flex-row flex-wrap items-center justify-around px-4">
-            <li className="mx-4 my-2 list-none">
-                <a
-                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
-                    href="#">
-                    <Twitter className="mr-2" />
-                    Twitter
-                </a>
-            </li>
-            <li className="mx-4 my-2 list-none">
-                <a
-                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
-                    href="#">
-                    <Linkedin className="mr-2" />
-                    Linkedin
-                </a>
-            </li>
-            <li className="mx-4 my-2 list-none">
-                <a
-                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
-                    href="#">
-                    <Facebook className="mr-2" />
-                    Facebook
-                </a>
-            </li>
-            <li className="mx-4 my-2 list-none">
-                <a
-                    className="flex flex-row items-center justify-between text-blue-500 hover:text-blue-600"
-                    href="#">
-                    <Youtube className="mr-2" />
-                    Youtube
-                </a>
-            </li>
+            <SocialMediaCard icon={<Twitter />} title="Twitter" />
+            <SocialMediaCard icon={<Linkedin />} title="Linkedin" />
+            <SocialMediaCard icon={<Facebook />} title="Facebook" />
+            <SocialMediaCard icon={<Youtube />} title="Youtube" />
         </ul>,
         <div className="flex h-full w-full items-center justify-center" key={useId()}>
             <iframe
@@ -80,7 +53,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
                                 {title}
                             </h3>
                             <button
-                                className="float-right ml-auto border-0 bg-transparent p-1 text-3xl font-semibold leading-none focus:outline-none"
+                                className="float-right ml-auto rounded-xl border-0 bg-transparent p-1 text-3xl font-semibold leading-none transition-colors duration-300 ease-in-out hover:rounded-full hover:bg-gray-100 focus:outline-none"
                                 onClick={() => setHidden(true)}>
                                 {<X className="text-red-600" />}
                             </button>
