@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface SponsorProps {
+export interface SponsorProps {
     logoHref: string;
     name: string;
     website: string;
@@ -11,7 +11,8 @@ const Sponsor: React.FC<SponsorProps> = ({ logoHref, name, website }) => {
         <a
             target="_blank"
             href={website}
-            className="m-auto my-2 flex h-52 w-52 items-center justify-center">
+            className="m-auto my-2 flex h-52 w-52 items-center justify-center"
+            rel="noreferrer">
             <img
                 className="my-4 mx-auto block h-auto max-h-[90%] max-w-[90%] rounded-[5px]"
                 src={logoHref}

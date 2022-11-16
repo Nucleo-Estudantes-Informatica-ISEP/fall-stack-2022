@@ -1,21 +1,21 @@
 import React from 'react';
-import HeadingText from '../HeadingText';
-import EventInfos from '../EventInfos/index';
 import EventDescription from '../EventDescription';
+import EventInfos from '../EventInfos/index';
+import HeadingText from '../HeadingText';
 
 interface InfoTextProps {
     days: number[];
     month: string;
-    begginingTime: string;
+    beginningTime: string;
     endTime: string;
 }
 
-const InfoText: React.FC<InfoTextProps> = ({ days, month, begginingTime, endTime }) => {
+const InfoText: React.FC<InfoTextProps> = ({ days, month, beginningTime, endTime }) => {
     return (
         <>
             <HeadingText text="O que é o Fallstack?" />
-            <EventInfos days={days} month={month} begginingTime={begginingTime} endTime={endTime} />
-            
+            <EventInfos days={days} month={month} beginningTime={beginningTime} endTime={endTime} />
+
             <EventDescription>
                 <p>
                     Mais um ano e mais uma edição do evento FallStack no Instituto Superior de

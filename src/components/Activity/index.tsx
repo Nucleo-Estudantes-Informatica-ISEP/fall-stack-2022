@@ -19,7 +19,7 @@ const Activity: FunctionComponent<ActivityProps> = ({ logo, title, day, children
                     <br />
                     (Dia {day})
                 </h5>
-                <div className="text-lg leading-7">{children}</div>
+                <div className="leading-8 lg:text-lg">{children}</div>
             </div>
         </section>
     );

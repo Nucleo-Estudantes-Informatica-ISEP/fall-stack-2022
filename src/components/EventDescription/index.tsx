@@ -6,7 +6,9 @@ interface EventDescriptionProps {
 
 const EventDescription: FunctionComponent<EventDescriptionProps> = ({ children }) => {
     return (
-        <section className="flex flex-col space-y-2 px-10 text-lg leading-8">{children}</section>
+        <section className="flex flex-col space-y-2  leading-8 lg:px-10 lg:text-lg">
+            {children}
+        </section>
     );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '../Modal';
 
-interface CompanyProps {
+export interface CompanyProps {
     logoHref: string;
     name: string;
     modalBodyText?: string;
@@ -12,13 +12,17 @@ const Company: React.FC<CompanyProps> = ({ logoHref, name, modalBodyText }) => {
 
     return (
         <>
-            <li
+            <div
                 className={`
                 ${modalBodyText && 'cursor-pointer'} 
-                my-2 w-60 list-none transition duration-300 ease-in-out hover:scale-105`}
+                  flex min-h-[8rem] items-center justify-center transition duration-300 ease-in-out hover:scale-105 lg:min-h-[11rem] `}
                 onClick={() => setIsHidden(false)}>
-                <img className="img-fluid my-3 mx-auto" src={logoHref} alt={name} />
-            </li>
+                <img
+                    className="h-full max-h-44 w-full max-w-[15rem] object-cover lg:max-h-28  lg:max-w-[20rem] lg:max-w-[18rem] xl:max-h-32 xl:max-w-[16rem]"
+                    src={logoHref}
+                    alt={name}
+                />
+            </div>
             {modalBodyText && (
                 <Modal
                     setHidden={setIsHidden}
