@@ -12,7 +12,7 @@ import SponsorsContainer from '../SponsorsContainer';
 const Content: React.FC = () => {
     return (
         <section className="center container mx-auto w-11/12 rounded-lg bg-slate-100 p-6 sm:w-3/4 lg:p-14">
-            <InfoText days={[15, 16]} month="Dezembro" begginingTime="15:00h" endTime="20:00h" />
+            <InfoText days={[15, 16]} month="Dezembro" beginningTime="15:00h" endTime="20:00h" />
 
             <section className="my-16 grid w-full grid-cols-1 justify-items-center gap-y-10 md:grid-cols-2 md:gap-x-5">
                 <div className="col-span-1">
@@ -35,8 +35,8 @@ const Content: React.FC = () => {
 
             <hr />
 
-            <div className="d-flex flex-column align-items-center justify-content-center text-center">
-                <h1 className="my-5 text-center">Inscrições</h1>
+            <section className="d-flex flex-column align-items-center justify-content-center my-12 text-center">
+                <HeadingText text="Inscrições" />
 
                 <a rel="noreferrer" target="_blank" href="">
                     <div className="flex items-center justify-center">
@@ -48,9 +48,11 @@ const Content: React.FC = () => {
                         />
                     </div>
 
-                    <h6 className="mt-5">Inscrição no google forms</h6>
+                    <h6 className="mt-12 text-center font-good__times text-lg lg:text-2xl">
+                        Inscrição no google forms
+                    </h6>
                 </a>
-            </div>
+            </section>
 
             <hr />
 
