@@ -48,12 +48,12 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
             <div className="fixed inset-0 z-10 my-auto flex h-4/5 items-center justify-center overflow-x-hidden overflow-y-scroll rounded-lg outline-none focus:outline-none md:h-3/5">
                 <div className="relative mx-auto h-full w-4/5 max-w-3xl rounded-lg">
                     <div className="min-h-full w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
-                        <div className="flex w-full items-start justify-between rounded-t border-b border-solid border-slate-200 p-5">
+                        <div className="flex w-full items-start justify-center rounded-t border-b border-solid border-slate-200 p-5">
                             <h3 className="w-full text-center text-3xl font-semibold capitalize">
                                 {title}
                             </h3>
                             <button
-                                className="float-right ml-auto rounded-xl border-0 bg-transparent p-1 text-3xl font-semibold leading-none transition-colors duration-300 ease-in-out hover:rounded-full hover:bg-gray-100 focus:outline-none"
+                                className="absolute right-4 ml-auto rounded-xl border-0 bg-transparent p-1 text-3xl font-semibold leading-none transition-colors duration-300 ease-in-out hover:rounded-full hover:bg-gray-100 focus:outline-none"
                                 onClick={() => setHidden(true)}>
                                 {<X className="text-red-600" />}
                             </button>
