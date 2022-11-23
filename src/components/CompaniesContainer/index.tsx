@@ -1,6 +1,6 @@
 import { FunctionComponent, useId } from 'react';
+import { CompaniesTier } from '../../utils/GetColorTier';
 import Company, { CompanyProps } from '../Company';
-import { CompaniesTier } from '../Utils';
 
 interface CompaniesContainerProps {
     tier: CompaniesTier;
@@ -24,7 +24,10 @@ const CompaniesContainer: FunctionComponent<CompaniesContainerProps> = ({ tier, 
     return (
         <section className="mb-12">
             <div>
-                <h2 className={`${getTierStyling(tier)}  border-b-2 text-center font-good__times`}>
+                <h2
+                    className={`${getTierStyling(
+                        tier
+                    )} z-0 border-b-2 text-center font-good__times`}>
                     {tier}
                 </h2>
             </div>

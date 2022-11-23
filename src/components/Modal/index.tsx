@@ -5,7 +5,14 @@ import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
 import SocialMediaCard from '../SocialMediaCard';
 
-const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => {
+const Modal: React.FC<ModalProps> = ({
+    hidden,
+    setHidden,
+    title,
+    bodyText,
+    videoHref,
+    videoTitle
+}) => {
     useEffect(() => {
         const onKeyPress = (e: KeyboardEvent) => {
             if (!hidden && e.key === 'Escape') setHidden(true);
@@ -22,18 +29,18 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
             {bodyText}
         </p>,
         <ul key={useId()} className="flex flex-row flex-wrap items-center justify-around px-4">
-            <SocialMediaCard icon={<Twitter />} title="Twitter" />
-            <SocialMediaCard icon={<Linkedin />} title="Linkedin" />
-            <SocialMediaCard icon={<Facebook />} title="Facebook" />
-            <SocialMediaCard icon={<Youtube />} title="Youtube" />
+            <SocialMediaCard href="#" icon={<Twitter />} title="Twitter" />
+            <SocialMediaCard href="#" icon={<Linkedin />} title="Linkedin" />
+            <SocialMediaCard href="#" icon={<Facebook />} title="Facebook" />
+            <SocialMediaCard href="#" icon={<Youtube />} title="Youtube" />
         </ul>,
         <div className="flex h-full w-full items-center justify-center" key={useId()}>
             <iframe
                 className="rounded-lg"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/hYuAnuUIJTY"
-                title="YouTube video player"
+                src={videoHref}
+                title={videoTitle}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
@@ -43,9 +50,9 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, title, bodyText }) => 
         <div
             className={`
             ${hidden ? 'hidden' : 'fixed'} 
-            inset-0 animate-fade-imm bg-gray-700/60
-            transition-opacity`}>
-            <div className="fixed inset-0 z-10 my-auto flex h-4/5 items-center justify-center overflow-x-hidden overflow-y-scroll rounded-lg outline-none focus:outline-none md:h-3/5">
+            inset-0 z-10 animate-fade-imm
+            bg-gray-700/60 transition-opacity`}>
+            <div className="fixed inset-0 my-auto flex h-4/5 items-center justify-center overflow-x-hidden overflow-y-scroll rounded-lg outline-none focus:outline-none md:h-3/5">
                 <div className="relative mx-auto h-full w-4/5 max-w-3xl rounded-lg">
                     <div className="min-h-full w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
                         <div className="flex w-full items-start justify-center rounded-t border-b border-solid border-slate-200 p-5">
