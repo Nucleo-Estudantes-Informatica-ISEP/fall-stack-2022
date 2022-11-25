@@ -1,6 +1,7 @@
 import React, { useEffect, useId } from 'react';
 
 import { Facebook, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
+import { useDisableBodyScroll } from '../../hooks/disableBackgroundMoving';
 import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
 import SocialMediaCard from '../SocialMediaCard';
@@ -13,6 +14,8 @@ const Modal: React.FC<ModalProps> = ({
     videoHref,
     videoTitle
 }) => {
+    useDisableBodyScroll({ modalIsHidden: hidden });
+
     useEffect(() => {
         const onKeyPress = (e: KeyboardEvent) => {
             if (!hidden && e.key === 'Escape') setHidden(true);
@@ -52,7 +55,7 @@ const Modal: React.FC<ModalProps> = ({
             ${hidden ? 'hidden' : 'fixed'} 
             inset-0 z-10 animate-fade-imm
             bg-gray-700/60 transition-opacity`}>
-            <div className="fixed inset-0 my-auto flex h-4/5 items-center justify-center overflow-x-hidden overflow-y-scroll rounded-lg outline-none focus:outline-none md:h-3/5">
+            <div className="fixed inset-0 my-auto flex h-4/5 items-center justify-center overflow-hidden rounded-lg outline-none focus:outline-none md:h-3/5">
                 <div className="relative mx-auto h-full w-4/5 max-w-3xl rounded-lg">
                     <div className="min-h-full w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
                         <div className="flex w-full items-start justify-center rounded-t border-b border-solid border-slate-200 p-5">
