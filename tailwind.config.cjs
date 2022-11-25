@@ -11,7 +11,7 @@ module.exports = {
                 'social-media-hover': '#2563eb' // blue-600
             },
             backgroundImage: {
-                'page-background': "url('/src/assets/images/background.png')"
+                'page-background': "url('/src/assets/images/background.webp')"
             },
             animation: {
                 fade: 'fade ease-out 1s 1.5s forwards',
