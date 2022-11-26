@@ -5,6 +5,6 @@ export default interface ModalProps {
     setHidden: React.Dispatch<React.SetStateAction<boolean>>;
     title: string;
     bodyText: string;
-    videoHref: string;
-    videoTitle: string;
+    videoHref?: string;
+    videoTitle?: string;
 }
