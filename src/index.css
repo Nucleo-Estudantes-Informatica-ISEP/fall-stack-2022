@@ -9,4 +9,8 @@
         font-family: 'Good Times';
         src: url('../assets/fonts/good-times.ttf') format('truetype');
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
 }

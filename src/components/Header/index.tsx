@@ -7,9 +7,16 @@ interface HeaderProps {
     logoAlt: string;
     eventDate: string;
     eventName: string;
+    contentRef: React.RefObject<HTMLDivElement>;
 }
 
-const Header: FunctionComponent<HeaderProps> = ({ logoSrc, logoAlt, eventDate, eventName }) => {
+const Header: FunctionComponent<HeaderProps> = ({
+    logoSrc,
+    logoAlt,
+    eventDate,
+    eventName,
+    contentRef
+}) => {
     return (
         <section className="flex h-screen w-full flex-col items-center justify-center">
             <div className="flex min-h-[80vh] flex-col items-center justify-center text-center">
@@ -30,8 +37,10 @@ const Header: FunctionComponent<HeaderProps> = ({ logoSrc, logoAlt, eventDate, e
                 </h5>
             </div>
 
-            <div className="absolute bottom-0 mx-0 mb-6 h-12 w-12 animate-bounce text-center transition-all duration-500 hover:translate-y-1/2 hover:scale-105">
-                <a className="animate-fade opacity-0 " href="#content">
+            <div className="absolute bottom-6 mx-0 flex h-12 w-12 animate-bounce cursor-pointer items-center justify-center text-center transition-all duration-500 hover:translate-y-1/2 hover:scale-105">
+                <a
+                    className="animate-fade opacity-0"
+                    onClick={() => contentRef.current?.scrollIntoView()}>
                     <ChevronDown color="white" size={30} />
                 </a>
             </div>
