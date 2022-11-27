@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import { Facebook, Instagram, Linkedin, Twitter } from 'react-bootstrap-icons';
+import NeiLogo from '../../../src/assets/images/logo-white.png';
 
 interface FooterProps {
     lastEditionUrl: string;
@@ -26,7 +27,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lastEditionUrl }) => {
                     <a href={NEI_WEBSITE_URL} target="_blank" rel="noreferrer">
                         <img
                             className="mx-auto block h-auto max-w-full drop-shadow-3xl transition-all duration-300 hover:drop-shadow-4xl"
-                            src="../../../src/assets/images/logo-white.png"
+                            src={NeiLogo}
                             height="200px"
                             width="350px"
                             alt="Logo branco do Núcleo de Estudantes de Informática do ISEP (NEI)"
