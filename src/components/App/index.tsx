@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useRef } from 'react';
 import Logo from '../../assets/images/logo.png';
 import Content from '../Content';
 import Footer from '../Footer';
@@ -7,6 +7,8 @@ import Header from '../Header';
 import HeroContainer from '../HeroContainer';
 
 const App: FunctionComponent = () => {
+    const contentRef = useRef<HTMLDivElement>(null);
+
     return (
         <HeroContainer>
             <GenericContainer>
@@ -15,8 +17,9 @@ const App: FunctionComponent = () => {
                     logoAlt="Logo principal do evento Fall-Stack 2022"
                     eventName="Fallstack 21/22"
                     eventDate="13 e 14 de janeiro"
+                    contentRef={contentRef}
                 />
-                <Content />
+                <Content contentRef={contentRef} />
                 <Footer lastEditionUrl="https://fallstack2020.nei-isep.org" />
             </GenericContainer>
         </HeroContainer>
