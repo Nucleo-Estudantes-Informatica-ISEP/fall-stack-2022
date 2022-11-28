@@ -7,4 +7,9 @@ export default interface ModalProps {
     bodyText: string;
     videoHref?: string;
     videoTitle?: string;
+    twitterLink?: string;
+    facebookLink?: string;
+    instagramLink?: string;
+    youtubeLink?: string;
+    linkedinLink?: string;
 }
