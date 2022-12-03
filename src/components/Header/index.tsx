@@ -37,7 +37,7 @@ const Header: FunctionComponent<HeaderProps> = ({
                 </h5>
             </div>
 
-            <div className="absolute bottom-6 mx-0 flex h-12 w-12 animate-bounce cursor-pointer items-center justify-center text-center transition-all duration-500 hover:translate-y-1/2 hover:scale-105">
+            <div className="absolute bottom-6 mx-0 flex h-12 w-12 animate-bounce cursor-pointer items-center justify-center text-center transition-all duration-200 hover:scale-105">
                 <a
                     className="animate-fade opacity-0"
                     onClick={() => contentRef.current?.scrollIntoView()}>

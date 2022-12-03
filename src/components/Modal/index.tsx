@@ -1,6 +1,6 @@
 import React, { useEffect, useId } from 'react';
 
-import { Facebook, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
+import { Facebook, Instagram, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
 import { useDisableBodyScroll } from '../../hooks/disableBackgroundMoving';
 import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
@@ -12,7 +12,12 @@ const Modal: React.FC<ModalProps> = ({
     title,
     bodyText,
     videoHref,
-    videoTitle
+    videoTitle,
+    twitterLink,
+    facebookLink,
+    instagramLink,
+    youtubeLink,
+    linkedinLink
 }) => {
     useDisableBodyScroll({ modalIsHidden: hidden });
 
@@ -32,10 +37,21 @@ const Modal: React.FC<ModalProps> = ({
             {bodyText}
         </p>,
         <ul key={useId()} className="flex flex-row flex-wrap items-center justify-around px-4">
-            <SocialMediaCard href="#" icon={<Twitter />} title="Twitter" />
-            <SocialMediaCard href="#" icon={<Linkedin />} title="Linkedin" />
-            <SocialMediaCard href="#" icon={<Facebook />} title="Facebook" />
-            <SocialMediaCard href="#" icon={<Youtube />} title="Youtube" />
+            {twitterLink && (
+                <SocialMediaCard href={twitterLink} icon={<Twitter />} title="Twitter" />
+            )}
+            {linkedinLink && (
+                <SocialMediaCard href={linkedinLink} icon={<Linkedin />} title="Linkedin" />
+            )}
+            {facebookLink && (
+                <SocialMediaCard href={facebookLink} icon={<Facebook />} title="Facebook" />
+            )}
+            {youtubeLink && (
+                <SocialMediaCard href={youtubeLink} icon={<Youtube />} title="Youtube" />
+            )}
+            {instagramLink && (
+                <SocialMediaCard href={instagramLink} icon={<Instagram />} title="Instagram" />
+            )}
         </ul>,
         <div className="flex h-full w-full items-center justify-center" key={useId()}>
             <iframe
