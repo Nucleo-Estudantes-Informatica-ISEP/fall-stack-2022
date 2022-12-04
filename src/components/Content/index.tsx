@@ -1,6 +1,7 @@
 import InscriptionFigure from '../../assets/images/google-forms.png';
 import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
+import { ScheduleDays } from '../../utils/ScheduleDays';
 import Activity from '../Activity';
 import CompaniesSection from '../CompaniesSection';
 import HeadingText from '../HeadingText';
@@ -76,31 +77,7 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
             <Schedule
                 firstDayTitle="Quinta-Feira - Auditório Magno"
                 secondDayTitle="Sexta-feira - Sala de Eventos"
-                scheduleEvents={[
-                    [
-                        {
-                            hour: '09.00h - 10.40h',
-                            activity: '	Sessão de entrevistas a empresas participantes'
-                        },
-                        { hour: '10.40h - 11.00h', activity: 'Coffee Break' },
-                        { hour: '11.00h - 11.30h', activity: 'Coffee Break' },
-                        { hour: '11.30h - 12.00h', activity: 'Coffee Break' },
-                        { hour: '12.00h - 12.30h', activity: 'Coffee Break' },
-                        { hour: '12.30h - 13.30h', activity: 'Coffee Break' },
-                        { hour: '13.30h - 14.00h', activity: 'Coffee Break' }
-                    ],
-                    [
-                        {
-                            hour: '09.30h - 11.00h',
-                            activity: 'Sessão de Round Tables e Networking'
-                        },
-                        { hour: '11.00h - 11.30h', activity: 'Coffee Break' },
-                        { hour: '11.30h - 12.00h', activity: 'Coffee Break' },
-                        { hour: '12.00h - 12.30h', activity: 'Coffee Break' },
-                        { hour: '12.30h - 13.30h', activity: 'Coffee Break' },
-                        { hour: '13.30h - 14.00h', activity: 'Coffee Break' }
-                    ]
-                ]}
+                scheduleEvents={ScheduleDays}
             />
 
             <hr />
