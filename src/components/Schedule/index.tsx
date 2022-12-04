@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HeadingText from '../HeadingText';
 
-interface ScheduleDay {
+export interface ScheduleDay {
     hour: string;
     activity: string;
 }
