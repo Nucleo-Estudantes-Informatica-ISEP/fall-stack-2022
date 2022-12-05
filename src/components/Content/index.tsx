@@ -1,14 +1,7 @@
-import InscriptionFigure from '../../assets/images/google-forms.png';
 import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
-import { ScheduleDays } from '../../utils/ScheduleDays';
 import Activity from '../Activity';
-import CompaniesSection from '../CompaniesSection';
-import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
-import Map from '../Map';
-import Schedule from '../Schedule';
-import SponsorsContainer from '../SponsorsContainer';
 
 interface ContentProps {
     contentRef: React.RefObject<HTMLDivElement>;
@@ -43,46 +36,12 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
             <hr />
 
             <section className="d-flex flex-column align-items-center justify-content-center my-12 text-center">
-                <HeadingText text="Inscrições" />
-
                 <a rel="noreferrer" target="_blank" href="">
-                    <div className="flex items-center justify-center">
-                        <img
-                            width="140px"
-                            height="140px"
-                            src={InscriptionFigure}
-                            alt="Link para as inscrições do evento FallStack"
-                        />
-                    </div>
-
-                    <h6 className="mt-12 text-center font-good__times text-lg lg:text-2xl">
+                    <h6 className="mt-12 text-center font-good__times text-lg text-cyan-800 transition-all duration-300 hover:scale-105 lg:text-2xl">
                         Inscrição no google forms
                     </h6>
                 </a>
             </section>
-
-            <hr />
-
-            <CompaniesSection />
-
-            <hr />
-
-            <HeadingText text="Patrocinadores" />
-            <section className="container-fluid">
-                <SponsorsContainer />
-            </section>
-
-            <hr />
-
-            <Schedule
-                firstDayTitle="Quinta-Feira - Auditório Magno"
-                secondDayTitle="Sexta-feira - Sala de Eventos"
-                scheduleEvents={ScheduleDays}
-            />
-
-            <hr />
-
-            <Map />
         </section>
     );
 };
