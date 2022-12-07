@@ -40,14 +40,20 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
                 </div>
             </section>
 
-            <hr />
-
             <section className="d-flex flex-column align-items-center justify-content-center mt-12 mb-6 text-center">
                 <a rel="noreferrer" target="_blank" href={REGISTRATION_LINK}>
-                    <h6 className="mt-12 inline-block text-center font-good__times text-lg text-fallstack-color transition-all duration-300 hover:scale-105 hover:drop-shadow-fallstack-text lg:text-2xl">
+                    <h6 className="mb-6 inline-block text-center font-good__times text-lg text-fallstack-color transition-all duration-300 hover:scale-105 hover:drop-shadow-fallstack-text lg:text-2xl">
                         Inscrição no google forms
                     </h6>
                 </a>
+            </section>
+
+            <hr />
+
+            <section className="d-flex flex-column align-items-center justify-content-center mt-12 mb-6 text-center">
+                <h2 className="mt-12 mb-6 text-center font-good__times text-xl text-gray-600 lg:text-3xl">
+                    Mais informações em breve...
+                </h2>
             </section>
         </section>
     );
