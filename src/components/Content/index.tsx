@@ -8,6 +8,9 @@ interface ContentProps {
 }
 
 const Content: React.FC<ContentProps> = ({ contentRef }) => {
+    const REGISTRATION_LINK =
+        'https://docs.google.com/forms/d/e/1FAIpQLSfKNCeOUtT_RboqnAFRfaiWRB6y969mhC__QElflp4rEJe-nA/viewform';
+
     return (
         <section
             ref={contentRef}
@@ -39,9 +42,9 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <hr />
 
-            <section className="d-flex flex-column align-items-center justify-content-center my-12 text-center">
-                <a rel="noreferrer" target="_blank" href="">
-                    <h6 className="mt-12 text-center font-good__times text-lg text-cyan-800 transition-all duration-300 hover:scale-105 lg:text-2xl">
+            <section className="d-flex flex-column align-items-center justify-content-center mt-12 mb-6 text-center">
+                <a rel="noreferrer" target="_blank" href={REGISTRATION_LINK}>
+                    <h6 className="mt-12 inline-block text-center font-good__times text-lg text-fallstack-color transition-all duration-300 hover:scale-105 hover:drop-shadow-fallstack-text lg:text-2xl">
                         Inscrição no google forms
                     </h6>
                 </a>
