@@ -21,7 +21,7 @@ const Header: FunctionComponent<HeaderProps> = ({
         <section className="flex h-screen w-full flex-col items-center justify-center">
             <div className="flex min-h-[80vh] flex-col items-center justify-center text-center">
                 <img
-                    className="h-[200px] max-w-full  drop-shadow-md transition-all duration-200 hover:scale-105 hover:drop-shadow-2xl lg:h-[300px]"
+                    className="h-[300px] max-w-full  drop-shadow-md transition-all duration-200 hover:scale-105 hover:drop-shadow-fallstack-logo-shadow lg:h-[400px]"
                     src={logoSrc}
                     alt={logoAlt}
                 />

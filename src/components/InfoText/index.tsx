@@ -18,21 +18,25 @@ const InfoText: React.FC<InfoTextProps> = ({ days, month, beginningTime, endTime
 
             <EventDescription>
                 <p className="text-justify">
-                    Mais um ano e mais uma edição do evento FallStack no Instituto Superior de
-                    Engenharia do Porto! Este evento que já vai na sua 4ª edição, será realizado nos
-                    dias {days.join(' e ')} de {month} e está de volta ao formato presencial, com
-                    entrada gratuita, tendo por objetivo fomentar o contacto direto entre empresas e
-                    alunos finalistas do curso de Engenharia Informática.
-                    <br />
-                    No primeiro dia poderás contar com as entrevistas às empresas participantes,
-                    onde ficarás a saber mais sobre as mesmas, desde as áreas em que trabalham até
-                    propostas de estágio.
-                    <br />
-                    No segundo dia irão ocorrer as Round Tables, onde poderás interagir diretamente
-                    com as empresas e conhecê-las com mais detalhe.
-                    <br />
-                    Contamos com a tua presença para este evento que te vai ajudar e esclarecer
-                    dúvidas que tenhas sobre empresas da nossa área de estudos.
+                    O evento Fallstack do Instituto Superior de Engenharia do Porto está finalmente
+                    de volta para mais uma edição imperdível! Este evento, já na sua 5ª edição,
+                    realiza-se nos dias {days.join(' e ')} de {month}, e proporciona a oportunidade
+                    única a finalistas de Engenharia Informática de contactarem com diversas
+                    empresas, oferecendo inúmeras possíveis oportunidades de estágio curricular.
+                </p>
+
+                <p className="text-justify">
+                    É gratuito a todos os estudantes e contempla duas atividades: a Sessão de
+                    Entrevistas e o Connection's Train. No primeiro dia, decorre a Sessão de
+                    Entrevistas, cujo objetivo é as empresas participantes darem-se a conhecer aos
+                    estudantes, desde a área onde trabalham até às propostas de estágio.
+                </p>
+
+                <p className="mt-4 text-justify">
+                    {' '}
+                    No segundo dia, é a vez do Connection's Train, onde os estudantes poderão
+                    interagir diretamente com todas as empresas presentes e esclarecer eventuais
+                    dúvidas que possam ter surgido ou ainda obter mais informações sobre as mesmas.
                 </p>
             </EventDescription>
         </>
