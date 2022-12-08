@@ -29,8 +29,8 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
                 <div className="col-span-1">
                     <Activity logo={Roundtables} title={"Connection's train"} day={20}>
                         <p>
-                            O objetivo das <strong>Connection's train</strong> é o estudante ter
-                            contacto com todas as empresas presentes no evento.
+                            O objetivo das <strong>Connection&apos;s train</strong> é o estudante
+                            ter contacto com todas as empresas presentes no evento.
                         </p>
                         <p>
                             Poderão ainda entrar em contacto com as empresas que mais despertaram

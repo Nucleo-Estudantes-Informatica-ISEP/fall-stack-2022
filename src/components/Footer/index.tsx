@@ -23,13 +23,11 @@ const Footer: FunctionComponent<FooterProps> = ({ lastEditionUrl }) => {
             </div>
 
             <div className="flex items-center justify-center lg:m-8">
-                <div className="w-max py-4 transition-all duration-300 hover:scale-105">
+                <div className="my-4 mx-8 max-h-[200px] max-w-[350px] transition-all duration-300 hover:scale-105">
                     <a href={NEI_WEBSITE_URL} target="_blank" rel="noreferrer">
                         <img
                             className="mx-auto block h-auto max-w-full drop-shadow-3xl transition-all duration-300 hover:drop-shadow-4xl"
                             src={NeiLogo}
-                            height="200px"
-                            width="350px"
                             alt="Logo branco do Núcleo de Estudantes de Informática do ISEP (NEI)"
                         />
                     </a>
