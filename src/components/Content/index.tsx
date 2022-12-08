@@ -1,4 +1,3 @@
-import InscriptionFigure from '../../assets/images/google-forms.png';
 import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
 import { ScheduleDays } from '../../utils/ScheduleDays';
@@ -15,6 +14,9 @@ interface ContentProps {
 }
 
 const Content: React.FC<ContentProps> = ({ contentRef }) => {
+    const REGISTRATION_LINK =
+        'https://docs.google.com/forms/d/e/1FAIpQLSfKNCeOUtT_RboqnAFRfaiWRB6y969mhC__QElflp4rEJe-nA/viewform';
+
     return (
         <section
             ref={contentRef}
@@ -33,8 +35,8 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
                 <div className="col-span-1">
                     <Activity logo={Roundtables} title={"Connection's train"} day={20}>
                         <p>
-                            O objetivo das <strong>Connection's train</strong> é o estudante ter
-                            contacto com todas as empresas presentes no evento.
+                            O objetivo das <strong>Connection&apos;s train</strong> é o estudante
+                            ter contacto com todas as empresas presentes no evento.
                         </p>
                         <p>
                             Poderão ainda entrar em contacto com as empresas que mais despertaram
@@ -46,20 +48,9 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <hr />
 
-            <section className="d-flex flex-column align-items-center justify-content-center my-12 text-center">
-                <HeadingText text="Inscrições" />
-
-                <a rel="noreferrer" target="_blank" href="">
-                    <div className="flex items-center justify-center">
-                        <img
-                            width="140px"
-                            height="140px"
-                            src={InscriptionFigure}
-                            alt="Link para as inscrições do evento FallStack"
-                        />
-                    </div>
-
-                    <h6 className="mt-12 text-center font-good__times text-lg lg:text-2xl">
+            <section className="d-flex flex-column align-items-center justify-content-center mt-12 mb-6 text-center">
+                <a rel="noreferrer" target="_blank" href={REGISTRATION_LINK}>
+                    <h6 className="mb-6 inline-block text-center font-good__times text-lg text-fallstack-color transition-all duration-300 hover:scale-105 hover:drop-shadow-fallstack-text-shadow lg:text-2xl">
                         Inscrição no google forms
                     </h6>
                 </a>
