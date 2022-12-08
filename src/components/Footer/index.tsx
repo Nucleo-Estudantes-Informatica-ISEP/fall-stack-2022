@@ -15,7 +15,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lastEditionUrl }) => {
             <div className="flex justify-center drop-shadow-lg hover:drop-shadow-xl lg:m-8">
                 <div className="my-6 mx-auto w-max transition-all duration-300 hover:scale-105">
                     <a href={lastEditionUrl} target="_blank" rel="noreferrer">
-                        <div className="rounded-3xl border-[5px] border-double border-white p-5 font-good__times text-2xl text-white drop-shadow-3xl transition-all duration-300 lg:text-[2.5rem]">
+                        <div className="rounded-3xl border-[5px] border-double border-white p-4 font-good__times text-2xl text-white drop-shadow-3xl transition-all duration-300 lg:p-5 lg:text-4xl">
                             Edição Anterior
                         </div>
                     </a>

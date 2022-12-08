@@ -14,7 +14,7 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
     return (
         <section
             ref={contentRef}
-            className="center container mx-auto w-11/12 rounded-lg bg-slate-100 p-10 sm:w-3/4 lg:p-14">
+            className="mx-auto w-11/12 rounded-lg bg-slate-100 p-10 sm:w-3/4 lg:p-14">
             <InfoText days={[19, 20]} month="Dezembro" beginningTime="9h00" endTime="17:30h" />
 
             <section className="my-16 grid w-full grid-cols-1 justify-items-center gap-y-10 md:grid-cols-2 md:gap-x-5">
@@ -42,7 +42,7 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <section className="d-flex flex-column align-items-center justify-content-center mt-12 mb-6 text-center">
                 <a rel="noreferrer" target="_blank" href={REGISTRATION_LINK}>
-                    <h6 className="mb-6 inline-block text-center font-good__times text-lg text-fallstack-color transition-all duration-300 hover:scale-105 hover:drop-shadow-fallstack-text lg:text-2xl">
+                    <h6 className="hover:drop-shadow-fallstack-text mb-6 inline-block text-center font-good__times text-lg text-fallstack-color transition-all duration-300 hover:scale-105 lg:text-2xl">
                         Inscrição no google forms
                     </h6>
                 </a>

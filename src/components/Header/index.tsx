@@ -18,9 +18,9 @@ const Header: FunctionComponent<HeaderProps> = ({
     contentRef
 }) => {
     return (
-        <section className="flex h-screen w-full flex-col items-center justify-around px-6">
+        <section className="mb-6 flex h-screen w-full flex-col items-center justify-around p-6 pb-2">
             <img
-                className="my-6 aspect-square h-max max-h-[400px] min-h-[300px] min-w-max drop-shadow-md transition-all duration-200 hover:scale-105 hover:drop-shadow-fallstack-logo-shadow"
+                className="my-6 aspect-square h-max max-h-[400px] min-h-[250px] min-w-max drop-shadow-md transition-all duration-200 hover:scale-105 hover:drop-shadow-fallstack-logo-shadow"
                 src={logoSrc}
                 alt={logoAlt}
             />

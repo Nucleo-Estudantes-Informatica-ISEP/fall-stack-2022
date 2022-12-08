@@ -10,11 +10,11 @@ interface ActivityProps {
 const Activity: FunctionComponent<ActivityProps> = ({ logo, title, day, children }) => {
     return (
         <section className="flex w-full flex-col items-center justify-center text-center">
-            <div className="flex min-h-[16.5rem] flex-col items-center justify-center">
+            <div className="flex min-h-0 flex-col items-center justify-center md:min-h-[16.5rem] ">
                 <div id="w-full">
                     <img src={logo} alt={`Atividade ${title}`} className="w-32" />
                 </div>
-                <h5 className="my-5 font-good__times text-2xl text-gray-600">
+                <h5 className="my-2 font-good__times text-2xl text-gray-600 lg:my-5">
                     {title}
                     <br />
                     (Dia {day})

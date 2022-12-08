@@ -27,14 +27,14 @@ const InfoText: React.FC<InfoTextProps> = ({ days, month, beginningTime, endTime
 
                 <p className="text-justify">
                     É gratuito a todos os estudantes e contempla duas atividades: a Sessão de
-                    Entrevistas e o Connection's Train. No primeiro dia, decorre a Sessão de
+                    Entrevistas e o Connection&apos;s Train. No primeiro dia, decorre a Sessão de
                     Entrevistas, cujo objetivo é as empresas participantes darem-se a conhecer aos
                     estudantes, desde a área onde trabalham até às propostas de estágio.
                 </p>
 
                 <p className="mt-4 text-justify">
                     {' '}
-                    No segundo dia, é a vez do Connection's Train, onde os estudantes poderão
+                    No segundo dia, é a vez do Connection&apos;s Train, onde os estudantes poderão
                     interagir diretamente com todas as empresas presentes e esclarecer eventuais
                     dúvidas que possam ter surgido ou ainda obter mais informações sobre as mesmas.
                 </p>
