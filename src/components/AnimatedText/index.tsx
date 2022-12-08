@@ -8,7 +8,7 @@ interface AnimatedTextProps {
     delay?: number;
 }
 
-const defaultAnimatedText = ['students.', 'companies.', 'enthusiasts.', 'your career prospects.'];
+const defaultAnimatedText = ['students.', 'companies.', 'enthusiasts.'];
 
 const AnimatedText: FunctionComponent<AnimatedTextProps> = ({
     textToDisplay = defaultAnimatedText,
