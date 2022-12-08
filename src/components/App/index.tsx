@@ -20,7 +20,7 @@ const App: FunctionComponent = () => {
                     contentRef={contentRef}
                 />
                 <Content contentRef={contentRef} />
-                <Footer lastEditionUrl="https://fallstack2020.nei-isep.org" />
+                <Footer lastEditionUrl="https://fallstack-21-22.nei-isep.org" />
             </GenericContainer>
         </HeroContainer>
     );
