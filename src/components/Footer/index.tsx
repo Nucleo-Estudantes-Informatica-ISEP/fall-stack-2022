@@ -11,9 +11,9 @@ const Footer: FunctionComponent<FooterProps> = ({ lastEditionUrl }) => {
     const NEI_WEBSITE_URL = 'https://nei-isep.org';
 
     return (
-        <footer className="w-full text-center">
+        <footer className="w-full px-8 text-center">
             <div className="flex justify-center drop-shadow-lg hover:drop-shadow-xl lg:m-8">
-                <div className="my-6 w-max  transition-all duration-300 hover:scale-105">
+                <div className="my-6 mx-auto w-max transition-all duration-300 hover:scale-105">
                     <a href={lastEditionUrl} target="_blank" rel="noreferrer">
                         <div className="rounded-3xl border-[5px] border-double border-white p-5 font-good__times text-2xl text-white drop-shadow-3xl transition-all duration-300 lg:text-[2.5rem]">
                             Edição Anterior
@@ -23,7 +23,7 @@ const Footer: FunctionComponent<FooterProps> = ({ lastEditionUrl }) => {
             </div>
 
             <div className="flex items-center justify-center lg:m-8">
-                <div className="my-4 mx-8 max-h-[200px] max-w-[350px] transition-all duration-300 hover:scale-105">
+                <div className="my-4  max-h-[200px] max-w-[350px] transition-all duration-300 hover:scale-105">
                     <a href={NEI_WEBSITE_URL} target="_blank" rel="noreferrer">
                         <img
                             className="mx-auto block h-auto max-w-full drop-shadow-3xl transition-all duration-300 hover:drop-shadow-4xl"
