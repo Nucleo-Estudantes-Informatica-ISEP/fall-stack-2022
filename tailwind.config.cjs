@@ -8,11 +8,7 @@ module.exports = {
                 'modal-active': '#f97316', // orange-50
                 'modal-hover-accent': '#f3f4f6', // gray-100
                 'social-media-link': '#3b82f6', // blue-500
-<<<<<<< HEAD
-                'social-media-hover': '#2563eb', // blue-600,
-=======
                 'social-media-hover': '#2563eb', // blue-600
->>>>>>> main
                 'fallstack-color': '#f97316' // orange-50
             },
             backgroundImage: {
