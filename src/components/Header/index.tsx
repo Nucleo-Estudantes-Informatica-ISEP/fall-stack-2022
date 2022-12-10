@@ -20,17 +20,17 @@ const Header: FunctionComponent<HeaderProps> = ({
     return (
         <section className="flex h-screen w-full flex-col items-center justify-center">
             <img
-                className="min-h-[300px] max-w-full  drop-shadow-md transition-all duration-200 hover:scale-105 hover:drop-shadow-fallstack-logo-shadow lg:h-[400px]"
+                className="h-[300px] max-w-full  drop-shadow-md transition-all duration-200 hover:scale-105 hover:drop-shadow-fallstack-logo-shadow lg:h-[400px]"
                 src={logoSrc}
                 alt={logoAlt}
             />
-            <h5 className="text-1xl my-6 mx-0 animate-fade text-center font-good__times text-white opacity-0 drop-shadow-3xl lg:text-2xl">
+            <h5 className="text-1xl my-2 mx-0 animate-fade text-center font-good__times text-white opacity-0 drop-shadow-3xl lg:my-6 lg:text-2xl">
                 {eventDate}
             </h5>
-            <h1 className="my-6 mx-0 animate-fade text-center font-good__times text-4xl text-white opacity-0 drop-shadow-3xl lg:text-6xl">
+            <h1 className="my-2 mx-0 animate-fade text-center font-good__times text-4xl text-white opacity-0 drop-shadow-3xl lg:my-6 lg:text-6xl">
                 {eventName}
             </h1>
-            <h5 className="text-1xl my-6 mx-0 animate-fade text-center font-good__times text-white opacity-0 drop-shadow-3xl lg:text-3xl">
+            <h5 className="text-1xl my-2 mx-0 animate-fade text-center font-good__times text-white opacity-0 drop-shadow-3xl lg:my-6 lg:text-3xl">
                 <div>The time has come for</div>
                 <AnimatedText />
             </h5>

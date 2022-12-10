@@ -46,8 +46,6 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
                 </div>
             </section>
 
-            <hr />
-
             <section className="d-flex flex-column align-items-center justify-content-center mt-12 mb-6 text-center">
                 <a rel="noreferrer" target="_blank" href={REGISTRATION_LINK}>
                     <h6 className="mb-6 inline-block text-center font-good__times text-lg text-fallstack-color transition-all duration-300 hover:scale-105 hover:drop-shadow-fallstack-text-shadow lg:text-2xl">
