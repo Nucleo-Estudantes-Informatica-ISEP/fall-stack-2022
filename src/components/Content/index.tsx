@@ -1,13 +1,9 @@
 import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
-import { ScheduleDays } from '../../utils/ScheduleDays';
 import Activity from '../Activity';
-import CompaniesSection from '../CompaniesSection';
-import HeadingText from '../HeadingText';
+import ComingSoon from '../ComingSoon';
 import InfoText from '../InfoText';
 import Map from '../Map';
-import Schedule from '../Schedule';
-import SponsorsContainer from '../SponsorsContainer';
 
 interface ContentProps {
     contentRef: React.RefObject<HTMLDivElement>;
@@ -56,26 +52,11 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <hr />
 
-            <CompaniesSection />
-
-            <hr />
-
-            <HeadingText text="Patrocinadores" />
-            <section className="container-fluid">
-                <SponsorsContainer />
-            </section>
-
-            <hr />
-
-            <Schedule
-                firstDayTitle="Segunda-Feira - Auditório Magno"
-                secondDayTitle="Terça-feira - Sala de Eventos"
-                scheduleEvents={ScheduleDays}
-            />
-
-            <hr />
-
             <Map />
+
+            <hr className="mt-12" />
+
+            <ComingSoon />
         </section>
     );
 };
