@@ -32,7 +32,7 @@ const CompaniesContainer: FunctionComponent<CompaniesContainerProps> = ({ tier, 
                 </h2>
             </div>
 
-            <div className="mt-4 grid grid-cols-responsiveness-180px-columns place-items-center gap-x-12 gap-y-4 lg:mt-12  xl:grid-cols-3">
+            <div className="mt-4 grid grid-cols-responsiveness-180px-columns place-items-center justify-center gap-x-12 gap-y-4 lg:mt-12  xl:grid-cols-3">
                 {companies.map((company) => {
                     const companyId = useId();
                     return <Company key={companyId} {...company} />;
