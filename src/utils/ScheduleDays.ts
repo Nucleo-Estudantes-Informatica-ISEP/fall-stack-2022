@@ -46,7 +46,7 @@ export const ScheduleDays: Array<ScheduleDaysProps[]> = [
         },
         {
             hour: '13.00h - 14.00h',
-            activity: 'Almoço'
+            activity: 'Pausa para almoço'
         },
         {
             hour: '14.00h - 15.30h',
