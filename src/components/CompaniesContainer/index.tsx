@@ -33,16 +33,9 @@ const CompaniesContainer: FunctionComponent<CompaniesContainerProps> = ({ tier, 
             </div>
 
             <div className="mt-4 grid grid-cols-responsiveness-180px-columns place-items-center gap-x-12 gap-y-4 lg:mt-12  xl:grid-cols-3">
-                {companies.map(({ logoHref, name, modalInformation }) => {
+                {companies.map((company) => {
                     const companyId = useId();
-                    return (
-                        <Company
-                            key={companyId}
-                            logoHref={logoHref}
-                            name={name}
-                            modalInformation={modalInformation}
-                        />
-                    );
+                    return <Company key={companyId} {...company} />;
                 })}
             </div>
         </section>

@@ -11,26 +11,32 @@ import {
 export const SilverCompanies: CompanyProps[] = [
     {
         logoHref: craftableLogo,
-        name: 'Craftable Software'
+        name: 'Craftable Software',
+        websiteUrl: 'https://www.craftablesoftware.com'
     },
     {
         logoHref: glinttLogo,
-        name: 'Glintt'
+        name: 'Glintt',
+        websiteUrl: 'https://www.glintt.com/'
     },
     {
         logoHref: konkLogo,
-        name: 'Konk'
+        name: 'Konk',
+        websiteUrl: 'https://www.konkconsulting.com/'
     },
     {
         logoHref: minderaLogo,
-        name: 'Mindera'
+        name: 'Mindera',
+        websiteUrl: 'https://mindera.com/'
     },
     {
         logoHref: delloiteLogo,
-        name: 'Deloitte'
+        name: 'Deloitte',
+        websiteUrl: 'https://www2.deloitte.com'
     },
     {
         logoHref: optimizerLogo,
-        name: 'Optimizer'
+        name: 'Optimizer',
+        websiteUrl: 'https://www.optimizer.pt'
     }
 ];
