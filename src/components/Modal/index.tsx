@@ -19,6 +19,9 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
         linkedinLink
     } = modalInformation;
 
+    const hasLinksSection = () =>
+        !!(twitterLink || linkedinLink || facebookLink || youtubeLink || instagramLink);
+
     useDisableBodyScroll({ modalIsHidden: hidden });
 
     useEffect(() => {
@@ -89,6 +92,9 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                         <ModalTabs
                             activeTabIndex={activeTabIndex}
                             setActiveTabIndex={setActiveTabIndex}
+                            hasDetailsSection={!!bodyText}
+                            hasLinksSection={hasLinksSection()}
+                            hasVideoSection={!!videoHref}
                         />
 
                         <div className="h-min-fit relative h-full flex-auto py-6 px-12">

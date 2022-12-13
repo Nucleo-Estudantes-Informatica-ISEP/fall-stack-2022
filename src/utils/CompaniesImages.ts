@@ -5,6 +5,9 @@ import DevscopeLogo from '../assets/images/companies/diamond/devscope_logo.png';
 import FabamaqLogo from '../assets/images/companies/diamond/fabamaq_logo.png';
 import HitachiLogo from '../assets/images/companies/diamond/hitachi_logo.png';
 import SonaeLogo from '../assets/images/companies/diamond/sonae_logo.png';
+import AccentureLogo from '../assets/images/companies/gold/accenture.png';
+import NatixisLogo from '../assets/images/companies/gold/natixis.png';
+import ParfoisLogo from '../assets/images/companies/gold/parfois.png';
 import craftableLogo from '../assets/images/companies/silver/craftable.png';
 import delloiteLogo from '../assets/images/companies/silver/delloite.png';
 import glinttLogo from '../assets/images/companies/silver/glintt.png';
@@ -35,5 +38,8 @@ export {
     konkLogo,
     minderaLogo,
     optimizerLogo,
-    jumiaLogo
+    jumiaLogo,
+    AccentureLogo,
+    ParfoisLogo,
+    NatixisLogo
 };
