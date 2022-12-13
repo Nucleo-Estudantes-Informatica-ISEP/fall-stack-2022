@@ -3,6 +3,7 @@ import {
     craftableLogo,
     delloiteLogo,
     glinttLogo,
+    jumiaLogo,
     konkLogo,
     minderaLogo,
     optimizerLogo
@@ -38,5 +39,10 @@ export const SilverCompanies: CompanyProps[] = [
         logoHref: optimizerLogo,
         name: 'Optimizer',
         websiteUrl: 'https://www.optimizer.pt'
+    },
+    {
+        logoHref: jumiaLogo,
+        name: 'Jumia',
+        websiteUrl: 'https://group.jumia.com'
     }
 ];

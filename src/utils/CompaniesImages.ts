@@ -8,6 +8,7 @@ import SonaeLogo from '../assets/images/companies/diamond/sonae_logo.png';
 import craftableLogo from '../assets/images/companies/silver/craftable.png';
 import delloiteLogo from '../assets/images/companies/silver/delloite.png';
 import glinttLogo from '../assets/images/companies/silver/glintt.png';
+import jumiaLogo from '../assets/images/companies/silver/jumia.png';
 import konkLogo from '../assets/images/companies/silver/konk.png';
 import minderaLogo from '../assets/images/companies/silver/mindera.png';
 import optimizerLogo from '../assets/images/companies/silver/optimizer.png';
@@ -33,5 +34,6 @@ export {
     glinttLogo,
     konkLogo,
     minderaLogo,
-    optimizerLogo
+    optimizerLogo,
+    jumiaLogo
 };
