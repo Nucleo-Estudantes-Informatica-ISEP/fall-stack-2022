@@ -61,7 +61,8 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                 src={videoHref}
                 title={videoTitle}
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen></iframe>
         </div>
     ];
 
