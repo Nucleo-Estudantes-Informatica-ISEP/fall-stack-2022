@@ -70,7 +70,7 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <Schedule
                 firstDayTitle="Segunda-Feira - Auditório Magno"
-                secondDayTitle="Terça-feira - Sala de Eventos"
+                secondDayTitle="Terça-Feira - Sala de Eventos"
                 scheduleEvents={ScheduleDays}
             />
 
