@@ -2,6 +2,7 @@ import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
 import { ScheduleDays } from '../../utils/ScheduleDays';
 import Activity from '../Activity';
+import ComingSoon from '../ComingSoon';
 import CompaniesSection from '../CompaniesSection';
 import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
@@ -76,6 +77,10 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
             <hr />
 
             <Map />
+
+            <hr />
+
+            <ComingSoon />
         </section>
     );
 };

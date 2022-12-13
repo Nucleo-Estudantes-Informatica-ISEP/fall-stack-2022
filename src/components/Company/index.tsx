@@ -1,13 +1,14 @@
 import React from 'react';
+import { ModalInformation } from '../../types/ModalProps';
 import Modal from '../Modal';
 
 export interface CompanyProps {
     logoHref: string;
     name: string;
-    modalBodyText?: string;
+    modalInformation?: ModalInformation;
 }
 
-const Company: React.FC<CompanyProps> = ({ logoHref, name, modalBodyText }) => {
+const Company: React.FC<CompanyProps> = ({ logoHref, name, modalInformation }) => {
     const [isHidden, setIsHidden] = React.useState(true);
 
     return (
@@ -21,12 +22,11 @@ const Company: React.FC<CompanyProps> = ({ logoHref, name, modalBodyText }) => {
                     alt={name}
                 />
             </div>
-            {modalBodyText && (
+            {modalInformation && (
                 <Modal
                     setHidden={setIsHidden}
                     hidden={isHidden}
-                    title={name}
-                    bodyText={modalBodyText}
+                    modalInformation={modalInformation}
                 />
             )}
         </>

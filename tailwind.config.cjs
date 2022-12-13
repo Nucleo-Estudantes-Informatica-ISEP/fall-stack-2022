@@ -16,7 +16,9 @@ module.exports = {
             },
             animation: {
                 fade: 'fade ease-out 1s 1.5s forwards',
-                'fade-imm': 'fade ease-out 200ms'
+                'fade-imm': 'fade ease-out 200ms',
+                'bounce-delayed-1': 'bounce 1s ease-in-out infinite 50ms',
+                'bounce-delayed-2': 'bounce 1s ease-in-out infinite 100ms'
             },
             aspectRatio: {
                 '1080/1080': '1080 / 1080'
