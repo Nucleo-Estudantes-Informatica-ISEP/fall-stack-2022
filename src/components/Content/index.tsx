@@ -4,11 +4,9 @@ import { ScheduleDays } from '../../utils/ScheduleDays';
 import Activity from '../Activity';
 import ComingSoon from '../ComingSoon';
 import CompaniesSection from '../CompaniesSection';
-import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
-import SponsorsContainer from '../SponsorsContainer';
 
 interface ContentProps {
     contentRef: React.RefObject<HTMLDivElement>;
@@ -61,13 +59,6 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <hr />
 
-            <HeadingText text="Patrocinadores" />
-            <section className="container-fluid">
-                <SponsorsContainer />
-            </section>
-
-            <hr />
-
             <Schedule
                 firstDayTitle="Segunda-Feira - Auditório Magno"
                 secondDayTitle="Terça-feira - Sala de Eventos"
@@ -78,7 +69,7 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <Map />
 
-            <hr />
+            <hr className="mt-12" />
 
             <ComingSoon />
         </section>
