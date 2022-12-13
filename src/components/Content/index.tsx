@@ -78,7 +78,7 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <Map />
 
-            <hr />
+            <hr className="mt-12" />
 
             <ComingSoon />
         </section>
