@@ -1,52 +1,36 @@
 import { CompanyProps } from '../components/Company';
-import {     craftableLogo,
+import {
+    craftableLogo,
     delloiteLogo,
     glinttLogo,
     konkLogo,
     minderaLogo,
-    optimizerLogo,
-    jumiaLogo,
-    } from './CompaniesImages';
-
-/**
-    TODO 
-    Silver Companies
-    Craftable software:
-    Glintt:
-    Konk:
-    Mindera:
-    Deloitte:
-    Optimizer:
- */
+    optimizerLogo
+} from './CompaniesImages';
 
 export const SilverCompanies: CompanyProps[] = [
     {
         logoHref: craftableLogo,
-        name: 'Craftable Software',
-    
-},
+        name: 'Craftable Software'
+    },
     {
         logoHref: glinttLogo,
-        name: 'Glintt',
+        name: 'Glintt'
     },
     {
         logoHref: konkLogo,
-        name: 'Konk',
+        name: 'Konk'
     },
     {
         logoHref: minderaLogo,
-        name: 'Mindera',
+        name: 'Mindera'
     },
     {
         logoHref: delloiteLogo,
-        name: 'Deloitte',
+        name: 'Deloitte'
     },
     {
         logoHref: optimizerLogo,
-        name: 'Optimizer',
-    },
-    {
-        logoHref: jumiaLogo,
-        name: 'Jumia',
-    },
+        name: 'Optimizer'
+    }
 ];
