@@ -6,19 +6,19 @@ import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
 import SocialMediaCard from '../SocialMediaCard';
 
-const Modal: React.FC<ModalProps> = ({
-    hidden,
-    setHidden,
-    title,
-    bodyText,
-    videoHref,
-    videoTitle,
-    twitterLink,
-    facebookLink,
-    instagramLink,
-    youtubeLink,
-    linkedinLink
-}) => {
+const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) => {
+    const {
+        title,
+        bodyText,
+        videoHref,
+        videoTitle,
+        twitterLink,
+        facebookLink,
+        instagramLink,
+        youtubeLink,
+        linkedinLink
+    } = modalInformation;
+
     useDisableBodyScroll({ modalIsHidden: hidden });
 
     useEffect(() => {
@@ -61,7 +61,8 @@ const Modal: React.FC<ModalProps> = ({
                 src={videoHref}
                 title={videoTitle}
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen></iframe>
         </div>
     ];
 
