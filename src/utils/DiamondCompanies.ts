@@ -20,7 +20,8 @@ export const DiamondCompanies: CompanyProps[] = [
             videoHref: 'https://www.youtube.com/embed/mvjg7InqfJY',
             facebookLink: 'https://www.facebook.com/CriticalManufacturing',
             instagramLink: 'https://www.instagram.com/criticalmanufacturing/',
-            linkedinLink: 'https://www.linkedin.com/company/critical-manufacturing'
+            linkedinLink: 'https://www.linkedin.com/company/critical-manufacturing',
+            website: 'www.criticalmanufacturing.com'
         }
     },
     {
@@ -35,7 +36,8 @@ export const DiamondCompanies: CompanyProps[] = [
             facebookLink: 'https://www.facebook.com/devscope/',
             youtubeLink: 'https://www.youtube.com/devscope',
             twitterLink: 'https://twitter.com/devscope',
-            linkedinLink: 'https://www.linkedin.com/company/devscope/'
+            linkedinLink: 'https://www.linkedin.com/company/devscope/',
+            website: 'https://devscope.net'
         }
     },
     {
@@ -49,7 +51,8 @@ export const DiamondCompanies: CompanyProps[] = [
             facebookLink: 'https://www.facebook.com/leadactivation/',
             linkedinLink: 'https://www.linkedin.com/company/byside/',
             videoTitle: 'Vídeo promocional',
-            videoHref: 'https://www.youtube.com/embed/HW_QqTAQL_k'
+            videoHref: 'https://www.youtube.com/embed/HW_QqTAQL_k',
+            website: 'https://byside.com'
         }
     },
     {
@@ -62,7 +65,8 @@ export const DiamondCompanies: CompanyProps[] = [
             instagramLink: 'https://www.instagram.com/hitachisolutions.portugal/',
             linkedinLink: 'https://www.linkedin.com/company/hitachi-solutions-portugal/',
             videoTitle: 'Vídeo promocional',
-            videoHref: 'https://www.youtube.com/embed/I4RyT-u2aIw'
+            videoHref: 'https://www.youtube.com/embed/I4RyT-u2aIw',
+            website: 'https://www.hitachi.eu/pt-pt'
         }
     },
     {

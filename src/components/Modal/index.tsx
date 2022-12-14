@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
     } = modalInformation;
 
     const hasLinksSection = () =>
-        !!(twitterLink || linkedinLink || facebookLink || youtubeLink || instagramLink);
+        !!(twitterLink || linkedinLink || facebookLink || youtubeLink || instagramLink || website);
 
     useDisableBodyScroll({ modalIsHidden: hidden });
 
