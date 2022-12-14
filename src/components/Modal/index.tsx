@@ -62,7 +62,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
         </ul>,
         <div className="flex h-full w-full items-center justify-center" key={useId()}>
             <iframe
-                className="max-w-[260px] rounded-lg sm:max-w-full"
+                className="max-w-full rounded-lg"
                 width="560"
                 height="315"
                 src={videoHref}
