@@ -14,8 +14,28 @@ export const GoldCompanies: CompanyProps[] = [
         name: 'Accenture',
         modalInformation: {
             title: 'Accenture',
-            bodyText:
-                'Accenture is a global professional services company with leading capabilities in digital, cloud and security. Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Interactive, Technology and Operations services — all powered by the world’s largest network of Advanced Technology and Intelligent Operations centers. Our 735,000 people deliver on the promise of technology and human ingenuity every day, serving clients in more than 120 countries. We embrace the power of change to create value and shared success for our clients, people, shareholders, partners and communities. Visit us at www.accenture.pt.',
+            bodyText: (
+                <>
+                    <p>
+                        Accenture is a global professional services company with leading
+                        capabilities in digital, cloud and security.
+                    </p>
+                    <br />
+                    <p>
+                        Combining unmatched experience and specialized skills across more than 40
+                        industries, we offer Strategy and Consulting, Interactive, Technology and
+                        Operations services, all powered by the world’s largest network of Advanced
+                        Technology and Intelligent Operations centers.
+                    </p>
+                    <br />
+                    <p>
+                        Our 735,000 people deliver on the promise of technology and human ingenuity
+                        every day, serving clients in more than 120 countries. We embrace the power
+                        of change to create value and shared success for our clients, people,
+                        shareholders, partners and communities.
+                    </p>
+                </>
+            ),
             website: 'www.accenture.pt'
         }
     },
@@ -36,7 +56,7 @@ export const GoldCompanies: CompanyProps[] = [
         modalInformation: {
             title: 'Parfois',
             bodyText:
-                'Parfois is a global women’s fashion accessories brand, created in 1994. Aiming to be the best women’s fashion accessories brand in every market wherever it decides to operate. That is only possible with a team of talented, passionate, ambitious and committed professionals. Parfois is an accessories brand with savy, chic, affordable and desirable fashion for every woman. It all started in Portugal. Now, everyone can find Parfois all over the world. We have more than 1000 stores present in over 70 countries! Visit us at www.parfois.com ! ',
+                'Parfois is a global women’s fashion accessories brand, created in 1994. Aiming to be the best women’s fashion accessories brand in every market wherever it decides to operate. That is only possible with a team of talented, passionate, ambitious and committed professionals. Parfois is an accessories brand with savy, chic, affordable and desirable fashion for every woman. It all started in Portugal. Now, everyone can find Parfois all over the world. We have more than 1000 stores present in over 70 countries!',
             website: 'https://www.parfois.com/'
         }
     }

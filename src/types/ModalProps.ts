@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 export default interface ModalProps {
     hidden: boolean;
@@ -8,7 +8,7 @@ export default interface ModalProps {
 
 export interface ModalInformation {
     title: string;
-    bodyText: string;
+    bodyText: ReactNode;
     videoHref?: string;
     videoTitle?: string;
     twitterLink?: string;

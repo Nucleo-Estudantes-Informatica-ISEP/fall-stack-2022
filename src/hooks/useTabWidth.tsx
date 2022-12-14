@@ -12,11 +12,9 @@ export default function useTabWidth(
             (section) => section
         ).length;
 
-        if (numberSectionsToShow === 1 || numberSectionsToShow === 0) {
-            setTabWidth('w-full');
-        } else {
-            setTabWidth(`w-1/${numberSectionsToShow}`);
-        }
+        if (numberSectionsToShow === 1 || numberSectionsToShow === 0) setTabWidth('w-full');
+        else if (numberSectionsToShow == 2) setTabWidth('w-1/2');
+        else setTabWidth(`w-1/${numberSectionsToShow}`);
     }, [hasDetailsSection, hasLinksSection, hasVideoSection]);
 
     return [tabWidth];

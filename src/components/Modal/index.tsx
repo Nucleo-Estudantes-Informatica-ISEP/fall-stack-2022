@@ -37,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
     const [activeTabIndex, setActiveTabIndex] = React.useState(0);
 
     const tabs: React.ReactNode[] = [
-        <p key={useId()} className="mb-4 text-justify text-lg leading-relaxed text-slate-500">
+        <p key={useId()} className="mb-4 text-justify text-base leading-relaxed text-slate-500">
             {bodyText}
         </p>,
         <ul key={useId()} className="flex flex-row flex-wrap items-center justify-around px-4">
