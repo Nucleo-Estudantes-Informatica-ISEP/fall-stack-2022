@@ -1,6 +1,6 @@
 import React, { useEffect, useId } from 'react';
 
-import { Facebook, Instagram, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
+import { Facebook, Globe, Instagram, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
 import { useDisableBodyScroll } from '../../hooks/disableBackgroundMoving';
 import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
@@ -16,7 +16,8 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
         facebookLink,
         instagramLink,
         youtubeLink,
-        linkedinLink
+        linkedinLink,
+        website
     } = modalInformation;
 
     const hasLinksSection = () =>
@@ -36,7 +37,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
     const [activeTabIndex, setActiveTabIndex] = React.useState(0);
 
     const tabs: React.ReactNode[] = [
-        <p key={useId()} className="mb-4 text-lg leading-relaxed text-slate-500">
+        <p key={useId()} className="mb-4 text-justify text-lg leading-relaxed text-slate-500">
             {bodyText}
         </p>,
         <ul key={useId()} className="flex flex-row flex-wrap items-center justify-around px-4">
@@ -55,6 +56,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
             {instagramLink && (
                 <SocialMediaCard href={instagramLink} icon={<Instagram />} title="Instagram" />
             )}
+            {website && <SocialMediaCard href={website} icon={<Globe />} title="Webiste" />}
         </ul>,
         <div className="flex h-full w-full items-center justify-center" key={useId()}>
             <iframe
@@ -97,7 +99,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                             hasVideoSection={!!videoHref}
                         />
 
-                        <div className="h-min-fit relative h-full flex-auto py-6 px-12">
+                        <div className="h-min-fit relative h-full flex-auto py-6 px-8 md:px-12">
                             {tabs[activeTabIndex]}
                         </div>
                     </div>

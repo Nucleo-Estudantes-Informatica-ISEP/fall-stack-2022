@@ -16,4 +16,5 @@ export interface ModalInformation {
     instagramLink?: string;
     youtubeLink?: string;
     linkedinLink?: string;
+    website?: string;
 }
