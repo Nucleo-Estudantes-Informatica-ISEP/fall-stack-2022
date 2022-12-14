@@ -1,4 +1,5 @@
 import React from 'react';
+import useTabWidth from '../../hooks/useTabWidth';
 
 interface ModalTabsProps {
     activeTabIndex: number;
@@ -6,7 +7,6 @@ interface ModalTabsProps {
     hasDetailsSection: boolean;
     hasLinksSection: boolean;
     hasVideoSection: boolean;
-    tabWidth: string;
 }
 
 const ModalTabs: React.FC<ModalTabsProps> = ({
@@ -14,9 +14,10 @@ const ModalTabs: React.FC<ModalTabsProps> = ({
     setActiveTabIndex,
     hasDetailsSection,
     hasLinksSection,
-    hasVideoSection,
-    tabWidth
+    hasVideoSection
 }) => {
+    const [tabWidth] = useTabWidth(hasDetailsSection, hasLinksSection, hasVideoSection);
+
     return (
         <div className="mx-auto flex w-full flex-col items-center justify-between md:flex-row">
             <div

@@ -5,19 +5,17 @@ export default function useTabWidth(
     hasLinksSection: boolean,
     hasVideoSection: boolean
 ) {
-    const [width, setWidth] = useState('');
+    const [tabWidth, setTabWidth] = useState('w-full');
 
     useEffect(() => {
         const numberSectionsToShow = [hasDetailsSection, hasLinksSection, hasVideoSection].filter(
             (section) => section
         ).length;
 
-        if (numberSectionsToShow === 1 || numberSectionsToShow === 0) setWidth('w-full');
-        else setWidth(`w-1/${numberSectionsToShow}`);
+        if (numberSectionsToShow === 1 || numberSectionsToShow === 0) setTabWidth('w-full');
+        else if (numberSectionsToShow == 2) setTabWidth('w-1/2');
+        else setTabWidth(`w-1/${numberSectionsToShow}`);
     }, []);
 
-    // return in array to make it easier to use in the component
-    // expanding with other properties in the future is easier
-    // ex. md, lg, xl and custom transition values
-    return [width];
+    return [tabWidth];
 }

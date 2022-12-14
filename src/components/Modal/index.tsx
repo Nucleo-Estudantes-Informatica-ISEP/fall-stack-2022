@@ -2,7 +2,6 @@ import React, { useEffect, useId } from 'react';
 
 import { Facebook, Instagram, Linkedin, Twitter, X, Youtube } from 'react-bootstrap-icons';
 import { useDisableBodyScroll } from '../../hooks/disableBackgroundMoving';
-import useTabWidth from '../../hooks/useTabWidth';
 import ModalProps from '../../types/ModalProps';
 import ModalTabs from '../ModalTabs';
 import SocialMediaCard from '../SocialMediaCard';
@@ -22,8 +21,6 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
 
     const hasLinksSection = () =>
         !!(twitterLink || linkedinLink || facebookLink || youtubeLink || instagramLink);
-
-    const [tabWidth] = useTabWidth(!!bodyText, hasLinksSection(), !!videoHref);
 
     useDisableBodyScroll({ modalIsHidden: hidden });
 
@@ -93,7 +90,6 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                             hasLinksSection={hasLinksSection()}
                             hasDetailsSection={!!bodyText}
                             hasVideoSection={!!videoHref}
-                            tabWidth={tabWidth}
                         />
 
                         <div className="h-min-fit relative h-full flex-auto py-6 px-12">
