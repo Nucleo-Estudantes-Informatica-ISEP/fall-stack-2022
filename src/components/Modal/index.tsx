@@ -65,18 +65,13 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                 height="315"
                 src={videoHref}
                 title={videoTitle}
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen></iframe>
         </div>
     ];
 
-    return (
-        <div
-            className={`
-            ${hidden ? 'hidden' : 'fixed'} 
-            inset-0 z-10 animate-fade-imm
-            bg-gray-700/60 transition-opacity`}>
+    return !hidden ? (
+        <div className={`fixed inset-0 z-10 animate-fade-imm bg-gray-700/60 transition-opacity`}>
             <div className="fixed inset-0 my-auto flex h-4/5 items-center justify-center overflow-hidden rounded-lg outline-none focus:outline-none md:h-3/5">
                 <div className="relative mx-auto h-full w-4/5 max-w-3xl rounded-lg">
                     <div className="min-h-full w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
@@ -94,8 +89,8 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                         <ModalTabs
                             activeTabIndex={activeTabIndex}
                             setActiveTabIndex={setActiveTabIndex}
-                            hasDetailsSection={!!bodyText}
                             hasLinksSection={hasLinksSection()}
+                            hasDetailsSection={!!bodyText}
                             hasVideoSection={!!videoHref}
                         />
 
@@ -106,7 +101,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                 </div>
             </div>
         </div>
-    );
+    ) : null;
 };
 
 export default Modal;
