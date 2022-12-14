@@ -6,6 +6,7 @@ interface ModalTabsProps {
     hasDetailsSection: boolean;
     hasLinksSection: boolean;
     hasVideoSection: boolean;
+    tabWidth: string;
 }
 
 const ModalTabs: React.FC<ModalTabsProps> = ({
@@ -13,24 +14,13 @@ const ModalTabs: React.FC<ModalTabsProps> = ({
     setActiveTabIndex,
     hasDetailsSection,
     hasLinksSection,
-    hasVideoSection
+    hasVideoSection,
+    tabWidth
 }) => {
-    const getTabWidth = () => {
-        const numberSectionsToShow = [hasDetailsSection, hasLinksSection, hasVideoSection].filter(
-            (section) => !!section
-        ).length;
-
-        if (length === 1 || length === 0) {
-            return 'w-full';
-        }
-
-        return `w-${numberSectionsToShow}/3`;
-    };
-
     return (
         <div className="mx-auto flex w-full flex-col items-center justify-between md:flex-row">
             <div
-                className={`absolute left-0 top-28 mt-2 hidden rounded-lg bg-modal-accent transition-transform duration-300 ease-in-out hover:brightness-90 sm:block md:mr-2 md:h-1 md:w-1/3 md:translate-y-0 ${
+                className={`absolute top-28 left-0 ${tabWidth} mt-2 mr-2 hidden h-1 rounded-lg bg-modal-accent transition-transform duration-300 ease-in-out hover:brightness-90 sm:block ${
                     activeTabIndex === 0
                         ? 'md:translate-x-0'
                         : activeTabIndex === 1
