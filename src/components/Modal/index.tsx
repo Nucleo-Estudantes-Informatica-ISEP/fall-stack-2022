@@ -37,7 +37,9 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
     const [activeTabIndex, setActiveTabIndex] = React.useState(0);
 
     const tabs: React.ReactNode[] = [
-        <p key={useId()} className="mb-4 text-justify text-base leading-relaxed text-slate-500">
+        <p
+            key={useId()}
+            className="mb-4 text-justify text-sm leading-relaxed text-slate-500 lg:text-base">
             {bodyText}
         </p>,
         <ul key={useId()} className="flex flex-row flex-wrap items-center justify-around px-4">
@@ -60,7 +62,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
         </ul>,
         <div className="flex h-full w-full items-center justify-center" key={useId()}>
             <iframe
-                className="rounded-lg"
+                className="max-w-[260px] rounded-lg sm:max-w-full"
                 width="560"
                 height="315"
                 src={videoHref}
@@ -72,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
 
     return !hidden ? (
         <div className={`fixed inset-0 z-10 animate-fade-imm bg-gray-700/60 transition-opacity`}>
-            <div className="fixed inset-0 my-auto flex h-4/5 items-center justify-center overflow-hidden rounded-lg outline-none focus:outline-none md:h-3/5">
+            <div className="fixed inset-0 my-auto flex h-[90%] items-center justify-center overflow-hidden rounded-lg outline-none focus:outline-none md:h-3/5">
                 <div className="relative mx-auto h-full w-4/5 max-w-3xl rounded-lg">
                     <div className="min-h-full w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
                         <div className="flex w-full items-start justify-center rounded-t border-b border-solid border-slate-200 p-5">

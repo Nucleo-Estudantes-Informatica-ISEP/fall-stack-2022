@@ -4,7 +4,6 @@ import { ScheduleDays } from '../../utils/ScheduleDays';
 import Activity from '../Activity';
 import ComingSoon from '../ComingSoon';
 import CompaniesSection from '../CompaniesSection';
-import HeadingText from '../HeadingText';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
@@ -61,7 +60,9 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <hr />
 
-            <HeadingText text="Patrocinadores" />
+            <h1 className="-mx-10 my-12 text-center font-good__times text-xl text-gray-600 sm:mx-0 sm:text-2xl lg:text-6xl">
+                Patrocinadores
+            </h1>
             <section className="container-fluid">
                 <SponsorsContainer />
             </section>
