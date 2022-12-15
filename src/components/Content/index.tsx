@@ -7,7 +7,6 @@ import CompaniesSection from '../CompaniesSection';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
-import SponsorsContainer from '../SponsorsContainer';
 
 interface ContentProps {
     contentRef: React.RefObject<HTMLDivElement>;
@@ -57,15 +56,6 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
             <hr />
 
             <CompaniesSection />
-
-            <hr />
-
-            <h1 className="-mx-10 my-12 text-center font-good__times text-xl text-gray-600 sm:mx-0 sm:text-2xl lg:text-6xl">
-                Patrocinadores
-            </h1>
-            <section className="container-fluid">
-                <SponsorsContainer />
-            </section>
 
             <hr />
 
