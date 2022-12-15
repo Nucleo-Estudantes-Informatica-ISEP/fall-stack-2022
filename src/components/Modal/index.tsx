@@ -73,16 +73,16 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
     ];
 
     return !hidden ? (
-        <div className={`fixed inset-0 z-10 animate-fade-imm bg-gray-700/60 transition-opacity`}>
+        <div className="fixed inset-0 z-10 animate-fade-imm bg-gray-700/60 transition-opacity">
             <div className="fixed inset-0 my-auto flex h-[90%] items-center justify-center overflow-hidden rounded-lg outline-none focus:outline-none md:h-3/5">
-                <div className="relative mx-auto h-full w-4/5 max-w-3xl rounded-lg">
+                <div className="scrollbar-medium relative mx-auto h-full w-4/5 max-w-3xl overflow-y-scroll rounded-lg scrollbar scrollbar-track-white scrollbar-thumb-slate-200">
                     <div className="min-h-full w-full flex-col rounded-lg border-0 bg-white shadow-lg outline-none focus:outline-none">
                         <div className="flex w-full items-start justify-center rounded-t border-b border-solid border-slate-200 p-5">
                             <h3 className="w-full text-center text-3xl font-semibold capitalize">
                                 {title}
                             </h3>
                             <button
-                                className="absolute right-4 ml-auto rounded-xl border-0 bg-transparent p-1 text-3xl font-semibold leading-none transition-colors duration-300 ease-in-out hover:rounded-full hover:bg-gray-100 focus:outline-none"
+                                className="absolute right-4 ml-auto rounded-xl border-0 bg-transparent p-1 text-3xl font-semibold leading-none transition-colors duration-300 ease-in-out focus:outline-none hover:rounded-full hover:bg-gray-100"
                                 onClick={() => setHidden(true)}>
                                 {<X className="text-red-600" />}
                             </button>
@@ -95,8 +95,7 @@ const Modal: React.FC<ModalProps> = ({ hidden, setHidden, modalInformation }) =>
                             hasDetailsSection={!!bodyText}
                             hasVideoSection={!!videoHref}
                         />
-
-                        <div className="h-min-fit relative h-full flex-auto py-6 px-8 md:px-12">
+                        <div className="h-min-fit relative z-30 h-full flex-auto py-6 px-8 md:px-12">
                             {tabs[activeTabIndex]}
                         </div>
                     </div>

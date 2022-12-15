@@ -14,3 +14,10 @@
         scroll-behavior: smooth;
     }
 }
+
+@layer utilities {
+    .scrollbar-medium::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 50%;
+    }
+}
