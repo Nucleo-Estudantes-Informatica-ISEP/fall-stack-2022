@@ -36,7 +36,7 @@ export const GoldCompanies: CompanyProps[] = [
                     </p>
                 </>
             ),
-            website: 'www.accenture.pt'
+            website: 'https://www.accenture.pt'
         }
     },
     {
