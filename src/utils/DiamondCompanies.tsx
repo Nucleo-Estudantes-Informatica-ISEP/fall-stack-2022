@@ -203,6 +203,28 @@ export const DiamondCompanies: CompanyProps[] = [
     },
     {
         logoHref: SonaeLogo,
-        name: 'Sonae Logo'
+        name: 'Sonae MC logo',
+        modalInformation: {
+            title: 'Sonae MC',
+            bodyText: (
+                <>
+                    <p>
+                        A MC é a empresa líder no setor do retalho alimentar, com mais de 35 anos de
+                        existência. Parte do grupo SONAE, apresenta um volume de negócios superior a
+                        5 mil milhões de euros e conta com mais de 35 mil colaboradores de norte a
+                        sul do país.
+                    </p>
+                    <br />
+                    <p>
+                        Do universo MC fazem parte insígnias de retalho alimentar (Continente,
+                        Continente Modelo, Continente Bom Dia), beleza e saúde (Wells e Dr. Wells),
+                        cafetaria e restauração (Cozinha Continente, Bagga e Go Natural), casa e
+                        decoração (Home Story), animais e veterinária (ZU) e papelaria (note!).
+                    </p>
+                </>
+            ),
+            linkedinLink: 'https://www.linkedin.com/company/mc-sonae/',
+            website: 'https://mc.sonae.pt'
+        }
     }
 ];
