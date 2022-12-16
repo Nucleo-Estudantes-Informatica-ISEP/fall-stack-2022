@@ -2,12 +2,11 @@ import Interview from '../../assets/images/interview.png';
 import Roundtables from '../../assets/images/roundtables.png';
 import { ScheduleDays } from '../../utils/ScheduleDays';
 import Activity from '../Activity';
-import ComingSoon from '../ComingSoon';
 import CompaniesSection from '../CompaniesSection';
 import InfoText from '../InfoText';
 import Map from '../Map';
 import Schedule from '../Schedule';
-import SponsorsContainer from '../SponsorsContainer';
+import SponsorsSection from '../SponsorsSection';
 
 interface ContentProps {
     contentRef: React.RefObject<HTMLDivElement>;
@@ -60,12 +59,7 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
 
             <hr />
 
-            <h1 className="-mx-10 my-12 text-center font-good__times text-xl text-gray-600 sm:mx-0 sm:text-2xl lg:text-6xl">
-                Patrocinadores
-            </h1>
-            <section className="container-fluid">
-                <SponsorsContainer />
-            </section>
+            <SponsorsSection />
 
             <hr />
 
@@ -78,10 +72,6 @@ const Content: React.FC<ContentProps> = ({ contentRef }) => {
             <hr />
 
             <Map />
-
-            <hr className="mt-12" />
-
-            <ComingSoon />
         </section>
     );
 };

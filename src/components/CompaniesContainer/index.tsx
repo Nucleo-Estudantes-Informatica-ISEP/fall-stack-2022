@@ -27,7 +27,7 @@ const CompaniesContainer: FunctionComponent<CompaniesContainerProps> = ({ tier, 
                 <h2
                     className={`${getTierStyling(
                         tier
-                    )} z-0 border-b-2 text-center font-good__times`}>
+                    )} z-0 mb-8 border-b-2 text-center font-good__times lg:mb-4`}>
                     {tier}
                 </h2>
             </div>
