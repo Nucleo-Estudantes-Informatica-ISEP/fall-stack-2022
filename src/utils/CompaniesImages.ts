@@ -16,9 +16,7 @@ import konkLogo from '../assets/images/companies/silver/konk.png';
 import minderaLogo from '../assets/images/companies/silver/mindera.png';
 import optimizerLogo from '../assets/images/companies/silver/optimizer.png';
 import aeIsepLogo from '../assets/images/sponsors/ae.png';
-import broinhasLogo from '../assets/images/sponsors/broinhas.png';
-import dominosLogo from '../assets/images/sponsors/dominos.png';
-import mouraLogo from '../assets/images/sponsors/moura.png';
+import doceAltoLogo from '../assets/images/sponsors/doce-alto.jpg';
 
 export {
     BysideLogoWithColors,
@@ -29,9 +27,6 @@ export {
     HitachiLogo,
     SonaeLogo,
     aeIsepLogo,
-    broinhasLogo,
-    dominosLogo,
-    mouraLogo,
     craftableLogo,
     delloiteLogo,
     glinttLogo,
@@ -41,5 +36,6 @@ export {
     jumiaLogo,
     AccentureLogo,
     ParfoisLogo,
-    NatixisLogo
+    NatixisLogo,
+    doceAltoLogo
 };

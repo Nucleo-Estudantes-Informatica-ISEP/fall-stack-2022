@@ -5,7 +5,7 @@ import SponsorsContainer from '../SponsorsContainer';
 
 const CompaniesSection: FunctionComponent = () => {
     return (
-        <section className="pb-8">
+        <section className="w-full pb-8">
             <HeadingText text="Patrocinadores" />
             <SponsorsContainer sponsors={Sponsors} />
         </section>

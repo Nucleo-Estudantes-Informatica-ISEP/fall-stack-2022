@@ -6,7 +6,7 @@ interface SponsorsContainerProps {
 }
 const SponsorsContainer: React.FC<SponsorsContainerProps> = ({ sponsors }) => {
     return (
-        <div className="flex flex-wrap items-center justify-center">
+        <div className="mx-auto flex w-full flex-wrap items-center justify-around md:w-[80%]">
             {sponsors.map(({ name, logoHref, website }) => {
                 const id = useId();
                 return <Sponsor key={id} logoHref={logoHref} name={name} website={website} />;
