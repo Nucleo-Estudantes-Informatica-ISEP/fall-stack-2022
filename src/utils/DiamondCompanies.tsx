@@ -224,7 +224,9 @@ export const DiamondCompanies: CompanyProps[] = [
                 </>
             ),
             linkedinLink: 'https://www.linkedin.com/company/mc-sonae/',
-            website: 'https://mc.sonae.pt'
+            website: 'https://mc.sonae.pt',
+            videoTitle: 'Vídeo institucional',
+            videoHref: 'https://www.youtube.com/embed/rYHBK6sxdzA'
         }
     }
 ];
